@@ -49,6 +49,19 @@ a {
   font-size: 14px;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 3vw, 32px);
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--ink);
+}
+
 .hero {
   min-height: calc(100vh - 72px);
   display: grid;
