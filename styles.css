@@ -40,8 +40,25 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #073646;
   font-size: 15px;
   font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: contain;
+  transition: transform 160ms ease;
+}
+
+.brand:hover .brand-mark {
+  transform: translateY(-1px);
 }
 
 .mail {
@@ -208,6 +225,11 @@ h1 {
 @media (max-width: 640px) {
   .nav {
     height: 64px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
   }
 
   .mail {
