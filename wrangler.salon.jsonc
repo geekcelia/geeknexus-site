@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "geeknexus-salon-proxy",
+  "main": "workers/salon-proxy.js",
+  "compatibility_date": "2026-08-01",
+  "routes": [
+    {
+      "pattern": "www.geeknexus.ai/salon*",
+      "zone_name": "geeknexus.ai"
+    }
+  ]
+}
