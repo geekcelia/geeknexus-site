@@ -72,7 +72,6 @@
     <section class="proof-strip" aria-label="AgentBox value summary">
       <div><strong>4</strong><span>integrated solution layers</span></div>
       <div><strong>01</strong><span>repeatable deployment kit</span></div>
-      <div><strong>30–60</strong><span>day pilot target</span></div>
       <p>Built in Hong Kong<br>for enterprise deployment.</p>
     </section>
 
@@ -86,8 +85,37 @@
       <div class="bento-grid">
         <article class="bento bento-feature">
           <div class="card-top"><span class="card-number">A1</span><span class="card-tag">Orchestration</span></div>
-          <div class="flow-visual" aria-hidden="true">
-            <div>EDGE</div><i></i><div>AGENT</div><i></i><div>CLOUD</div>
+          <div class="architecture-visual" aria-hidden="true">
+            <div class="architecture-head">
+              <span><i></i>Live deployment topology</span>
+              <strong>Hybrid · HK-01</strong>
+            </div>
+            <div class="architecture-flow">
+              <div class="architecture-zone edge-zone">
+                <span class="zone-label">EDGE SITE</span>
+                <div class="architecture-node"><b>01</b><span><strong>Private compute</strong><small>GPU appliance</small></span></div>
+                <div class="architecture-node"><b>02</b><span><strong>Local data</strong><small>Files + sensors</small></span></div>
+                <div class="architecture-node"><b>03</b><span><strong>Enterprise tools</strong><small>ERP · CRM · API</small></span></div>
+              </div>
+              <div class="architecture-link"><span>Encrypted</span><i></i><small>Low latency</small></div>
+              <div class="architecture-zone agent-zone">
+                <span class="zone-label">AGENTBOX RUNTIME</span>
+                <img src="assets/geek-nexus-logo-mark.png" alt="">
+                <strong>Agent control layer</strong>
+                <div class="runtime-modules"><span>MODEL</span><span>TOOLS</span><span>RAG</span><span>POLICY</span></div>
+                <p><i></i>Runtime healthy</p>
+              </div>
+              <div class="architecture-link"><span>Managed</span><i></i><small>Observable</small></div>
+              <div class="architecture-zone cloud-zone">
+                <span class="zone-label">CLOUD SERVICES</span>
+                <div class="cloud-orbit"><i></i><i></i><i></i><span>CLOUD</span></div>
+                <div class="cloud-metrics"><span><b>12</b> agents</span><span><b>99.9%</b> uptime</span></div>
+              </div>
+            </div>
+            <div class="architecture-status">
+              <span><i></i>Private data stays local</span>
+              <span>Policy synced <b>12 sec ago</b></span>
+            </div>
           </div>
           <h3>One control layer across edge and cloud.</h3>
           <p>Coordinate models, tools, data access, device health, and policy from a consistent runtime.</p>
@@ -104,12 +132,6 @@
           <h3>Connect agents to the way your teams already work.</h3>
           <p>Package business systems, knowledge, approvals, and human checkpoints into deployable workflows.</p>
         </article>
-        <article class="bento bento-accent">
-          <div class="card-top"><span class="card-number">A4</span><span class="card-tag light">Pilot</span></div>
-          <strong class="big-stat">30–60</strong>
-          <span class="stat-label">days to a measurable pilot</span>
-          <p>Define one workflow, deploy the stack, validate business value, then scale the pattern.</p>
-        </article>
       </div>
     </section>
 
@@ -122,10 +144,10 @@
         <p>We combine solution architecture with scenario integration, so enterprise teams can focus on adoption instead of assembling the entire stack themselves.</p>
       </div>
       <ol class="steps">
-        <li><span>01</span><div><strong>Discover</strong><p>Choose a workflow with clear data, privacy, and success criteria.</p></div></li>
-        <li><span>02</span><div><strong>Package</strong><p>Combine hardware, runtime, models, knowledge, and business tools.</p></div></li>
-        <li><span>03</span><div><strong>Deploy</strong><p>Launch an edge or hybrid pilot inside the target environment.</p></div></li>
-        <li><span>04</span><div><strong>Repeat</strong><p>Turn the validated pattern into a reusable enterprise capability.</p></div></li>
+        <li class="step-discover"><span>01</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Discover</strong><p>Choose a workflow with clear data, privacy, and success criteria.</p></div></li>
+        <li class="step-package"><span>02</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b>+</b></div><div><strong>Package</strong><p>Combine hardware, runtime, models, knowledge, and business tools.</p></div></li>
+        <li class="step-deploy"><span>03</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Deploy</strong><p>Launch an edge or hybrid pilot inside the target environment.</p></div></li>
+        <li class="step-repeat"><span>04</span><div class="step-visual" aria-hidden="true"><i></i><i></i><b>↗</b></div><div><strong>Repeat</strong><p>Turn the validated pattern into a reusable enterprise capability.</p></div></li>
       </ol>
     </section>
 
@@ -138,9 +160,9 @@
         <p>Start with a focused business outcome, then expand the same deployment foundation across teams and locations.</p>
       </div>
       <div class="scenario-grid">
-        <article><span>KNOWLEDGE</span><h3>Private enterprise knowledge agent</h3><p>Secure retrieval, internal answers, document understanding, and governed access.</p><i>01</i></article>
-        <article><span>SERVICE</span><h3>Customer and employee service agent</h3><p>Connect conversational AI with business systems, approvals, and escalation paths.</p><i>02</i></article>
-        <article><span>OPERATIONS</span><h3>Document and workflow automation</h3><p>Turn repetitive professional-service processes into traceable agent workflows.</p><i>03</i></article>
+        <article class="scenario-knowledge"><span>KNOWLEDGE</span><div class="scenario-visual" aria-hidden="true"><div class="document-stack"><i></i><i></i><i></i><b>AI</b></div><div class="search-pulse"></div></div><h3>Private enterprise knowledge agent</h3><p>Secure retrieval, internal answers, document understanding, and governed access.</p><i>01</i></article>
+        <article class="scenario-service"><span>SERVICE</span><div class="scenario-visual" aria-hidden="true"><div class="person-dot">AI</div><div class="message-bubble"><i></i><i></i><i></i></div><div class="message-bubble small"><i></i><i></i></div></div><h3>Customer and employee service agent</h3><p>Connect conversational AI with business systems, approvals, and escalation paths.</p><i>02</i></article>
+        <article class="scenario-operations"><span>OPERATIONS</span><div class="scenario-visual" aria-hidden="true"><div class="workflow-card">01<i></i></div><b></b><div class="workflow-card">AI<i></i></div><b></b><div class="workflow-card">✓<i></i></div></div><h3>Document and workflow automation</h3><p>Turn repetitive professional-service processes into traceable agent workflows.</p><i>03</i></article>
       </div>
     </section>
 
