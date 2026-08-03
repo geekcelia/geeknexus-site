@@ -18,8 +18,13 @@
   <link rel="icon" type="image/png" href="../assets/geek-nexus-logo-mark.png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="manifest" href="../manifest.webmanifest">
-  <link rel="stylesheet" href="../styles.css?v=15">
-  <link rel="stylesheet" href="company.css?v=18">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=16">
+  <link rel="stylesheet" href="company.css?v=19">
+  <script src="../site.js?v=1" defer></script>
   <script src="../pwa.js?v=1" defer></script>
 </head>
 <body>
@@ -66,7 +71,7 @@
       </aside>
     </section>
 
-    <section class="entry-point" aria-label="Best-fit customer profile">
+    <section class="entry-point reveal" aria-label="Best-fit customer profile">
       <span>Best fit</span>
       <strong>Mid-sized enterprises with sensitive data</strong>
       <i aria-hidden="true">+</i>
@@ -75,7 +80,7 @@
     </section>
 
     <section class="company-section services" aria-labelledby="services-title">
-      <div class="company-section-head split-company-head">
+      <div class="company-section-head split-company-head reveal">
         <div>
           <p class="section-index">Solutions</p>
           <h2 id="services-title">Three practical places to start.</h2>
@@ -83,21 +88,21 @@
         <p>Each solution begins with one bounded workflow and includes the data, integration, governance, and operating requirements needed for real use.</p>
       </div>
       <div class="service-grid">
-        <article class="service-interactive">
+        <article class="service-interactive reveal">
           <div class="service-top"><span>01</span><b>KNOWLEDGE</b></div>
           <div class="service-visual interactive-visual" aria-hidden="true"><i></i><i></i><i></i><strong>AI</strong></div>
           <h3>Private enterprise knowledge agent</h3>
           <ul><li>Governed retrieval across internal documents</li><li>Role-aware answers with source traceability</li><li>Private or hybrid execution options</li></ul>
           <p>For teams that need reliable internal answers without moving sensitive knowledge into an uncontrolled public workflow.</p>
         </article>
-        <article class="service-cloud">
+        <article class="service-cloud reveal">
           <div class="service-top"><span>02</span><b>SERVICE</b></div>
           <div class="service-visual cloud-visual" aria-hidden="true"><i></i><i></i><i></i><strong>CLOUD</strong></div>
           <h3>Customer and employee service agent</h3>
           <ul><li>CRM, ticketing, knowledge, and API integration</li><li>Approvals, escalation, and human handoff</li><li>Quality, latency, and usage monitoring</li></ul>
           <p>For service teams that want faster resolution while preserving accountability and a clear path to human support.</p>
         </article>
-        <article class="service-custom">
+        <article class="service-custom reveal">
           <div class="service-top"><span>03</span><b>OPERATIONS</b></div>
           <div class="service-visual custom-visual" aria-hidden="true"><i>DOC</i><b>→</b><i>AI</i><b>→</b><i>✓</i></div>
           <h3>Document and workflow automation</h3>
@@ -108,12 +113,12 @@
     </section>
 
     <section class="company-section audience" aria-labelledby="audience-title">
-      <div class="audience-intro">
+      <div class="audience-intro reveal">
         <p class="section-index">Ideal customer profile</p>
         <h2 id="audience-title">Built for teams with a real workflow to improve.</h2>
         <p>The strongest starting point is not a broad AI ambition. It is a named business owner, a bounded workflow, and a result the team can measure.</p>
       </div>
-      <div class="audience-board">
+      <div class="audience-board reveal">
         <div class="audience-clusters">
           <span>Sensitive or regulated data</span><span>Repeatable, high-volume workflow</span><span>Existing knowledge base, CRM, ERP, or APIs</span><span>Named business and technical owner</span>
         </div>
@@ -126,19 +131,19 @@
     </section>
 
     <section class="company-section business-path" aria-labelledby="path-title">
-      <div class="company-section-head split-company-head">
+      <div class="company-section-head split-company-head reveal">
         <div><p class="section-index">How clients engage</p><h2 id="path-title">Discover. Pilot. Prove. Scale.</h2></div>
         <p>Each stage ends with a clear deliverable and a decision to continue, refine, or stop.</p>
       </div>
       <ol class="path-steps">
-        <li><span>01</span><div class="path-icon path-project" aria-hidden="true"><i></i><i></i><b>✓</b></div><h3>Discover</h3><p>Map the workflow, users, systems, data boundary, risks, and success measures.</p><small>FIT BRIEF</small></li>
-        <li><span>02</span><div class="path-icon path-product" aria-hidden="true"><i></i><i></i><i></i></div><h3>Pilot</h3><p>Deploy one controlled workflow with the required integrations and human checkpoints.</p><small>PILOT PLAN</small></li>
-        <li><span>03</span><div class="path-icon path-project" aria-hidden="true"><i></i><i></i><b>✓</b></div><h3>Prove</h3><p>Compare observed quality, adoption, latency, cost, and risk against the agreed measures.</p><small>KPI REVIEW</small></li>
-        <li><span>04</span><div class="path-icon path-ecosystem" aria-hidden="true"><i></i><i></i><i></i><b>↗</b></div><h3>Scale</h3><p>Standardize the validated pattern across more workflows, teams, sites, or devices.</p><small>SCALE ROADMAP</small></li>
+        <li class="reveal"><span>01</span><div class="path-icon path-project" aria-hidden="true"><i></i><i></i><b>✓</b></div><h3>Discover</h3><p>Map the workflow, users, systems, data boundary, risks, and success measures.</p><small>FIT BRIEF</small></li>
+        <li class="reveal"><span>02</span><div class="path-icon path-product" aria-hidden="true"><i></i><i></i><i></i></div><h3>Pilot</h3><p>Deploy one controlled workflow with the required integrations and human checkpoints.</p><small>PILOT PLAN</small></li>
+        <li class="reveal"><span>03</span><div class="path-icon path-project" aria-hidden="true"><i></i><i></i><b>✓</b></div><h3>Prove</h3><p>Compare observed quality, adoption, latency, cost, and risk against the agreed measures.</p><small>KPI REVIEW</small></li>
+        <li class="reveal"><span>04</span><div class="path-icon path-ecosystem" aria-hidden="true"><i></i><i></i><i></i><b>↗</b></div><h3>Scale</h3><p>Standardize the validated pattern across more workflows, teams, sites, or devices.</p><small>SCALE ROADMAP</small></li>
       </ol>
     </section>
 
-    <section class="company-contact" aria-labelledby="contact-title">
+    <section class="company-contact reveal" aria-labelledby="contact-title">
       <div><p class="section-index">Start with one practical workflow</p><h2 id="contact-title">See whether AgentBox fits.</h2><p>Bring one workflow, its users, and the systems it touches. We will help frame the data boundary, pilot scope, and measures for a go-or-no-go decision.</p></div>
       <div class="contact-details">
         <a href="mailto:hello@geeknexus.ai"><span>Email</span><strong>hello@geeknexus.ai</strong></a>

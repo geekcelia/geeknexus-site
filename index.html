@@ -20,7 +20,12 @@
   <link rel="icon" type="image/png" href="assets/geek-nexus-logo-mark.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=15">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=16">
+  <script src="site.js?v=1" defer></script>
   <script src="pwa.js?v=1" defer></script>
 </head>
 <body>
@@ -79,21 +84,21 @@
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="AgentBox value summary">
+    <section class="proof-strip reveal" aria-label="AgentBox value summary">
       <div><strong>4</strong><span>integrated solution layers</span></div>
       <div><strong>01</strong><span>repeatable deployment kit</span></div>
       <p>Built in Hong Kong<br>for enterprise deployment.</p>
     </section>
 
     <section class="section platform" id="platform" aria-labelledby="platform-title">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="section-index">01 / Platform</p>
         <h2 id="platform-title">From AI ambition to an operating system for deployment.</h2>
         <p>AgentBox standardizes the infrastructure and integration work required to move AI agents from isolated demos into real business operations.</p>
       </div>
 
       <div class="bento-grid">
-        <article class="bento bento-feature">
+        <article class="bento bento-feature reveal">
           <div class="card-top"><span class="card-number">A1</span><span class="card-tag">Orchestration</span></div>
           <div class="architecture-visual" aria-hidden="true">
             <div class="architecture-head">
@@ -130,13 +135,13 @@
           <h3>One control layer across edge and cloud.</h3>
           <p>Coordinate models, tools, data access, device health, and policy from a consistent runtime.</p>
         </article>
-        <article class="bento">
+        <article class="bento reveal">
           <div class="card-top"><span class="card-number">A2</span><span class="card-tag cyan">Privacy</span></div>
           <div class="data-ring" aria-hidden="true"><span>LOCAL</span></div>
           <h3>Keep sensitive workflows closer to the data.</h3>
           <p>Support private and hybrid execution for latency, governance, and data residency needs.</p>
         </article>
-        <article class="bento">
+        <article class="bento reveal">
           <div class="card-top"><span class="card-number">A3</span><span class="card-tag orange">Integration</span></div>
           <div class="integration-chips" aria-hidden="true"><span>CRM</span><span>ERP</span><span>KB</span><span>API</span></div>
           <h3>Connect agents to the way your teams already work.</h3>
@@ -146,7 +151,7 @@
     </section>
 
     <section class="section deployment" id="deployment" aria-labelledby="deployment-title">
-      <div class="section-heading split-heading">
+      <div class="section-heading split-heading reveal">
         <div>
           <p class="section-index">02 / Client journey</p>
           <h2 id="deployment-title">From one workflow to a scalable deployment.</h2>
@@ -154,15 +159,15 @@
         <p>Each stage has a clear decision, deliverable, and success measure, so teams can validate value before expanding the deployment.</p>
       </div>
       <ol class="steps">
-        <li class="step-discover"><span>01</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Discover</strong><p>Confirm the workflow, users, data boundary, business owner, and measurable success criteria.</p></div></li>
-        <li class="step-package"><span>02</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b>+</b></div><div><strong>Pilot</strong><p>Deploy one governed workflow with the required models, knowledge, tools, and human checkpoints.</p></div></li>
-        <li class="step-deploy"><span>03</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Prove</strong><p>Review adoption, quality, latency, cost, security, and operational readiness against the agreed measures.</p></div></li>
-        <li class="step-repeat"><span>04</span><div class="step-visual" aria-hidden="true"><i></i><i></i><b>↗</b></div><div><strong>Scale</strong><p>Standardize the validated pattern across teams, locations, devices, or additional workflows.</p></div></li>
+        <li class="step-discover reveal"><span>01</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Discover</strong><p>Confirm the workflow, users, data boundary, business owner, and measurable success criteria.</p></div></li>
+        <li class="step-package reveal"><span>02</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b>+</b></div><div><strong>Pilot</strong><p>Deploy one governed workflow with the required models, knowledge, tools, and human checkpoints.</p></div></li>
+        <li class="step-deploy reveal"><span>03</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Prove</strong><p>Review adoption, quality, latency, cost, security, and operational readiness against the agreed measures.</p></div></li>
+        <li class="step-repeat reveal"><span>04</span><div class="step-visual" aria-hidden="true"><i></i><i></i><b>↗</b></div><div><strong>Scale</strong><p>Standardize the validated pattern across teams, locations, devices, or additional workflows.</p></div></li>
       </ol>
     </section>
 
     <section class="section scenarios" id="scenarios" aria-labelledby="scenarios-title">
-      <div class="section-heading split-heading">
+      <div class="section-heading split-heading reveal">
         <div>
           <p class="section-index">03 / Scenarios</p>
           <h2 id="scenarios-title">Designed for work that needs to get done.</h2>
@@ -170,13 +175,13 @@
         <p>Start with a focused business outcome, then expand the same deployment foundation across teams and locations.</p>
       </div>
       <div class="scenario-grid">
-        <article class="scenario-knowledge"><span>KNOWLEDGE</span><div class="scenario-visual" aria-hidden="true"><div class="document-stack"><i></i><i></i><i></i><b>AI</b></div><div class="search-pulse"></div></div><h3>Private enterprise knowledge agent</h3><p>Secure retrieval, internal answers, document understanding, and governed access.</p><i>01</i></article>
-        <article class="scenario-service"><span>SERVICE</span><div class="scenario-visual" aria-hidden="true"><div class="person-dot">AI</div><div class="message-bubble"><i></i><i></i><i></i></div><div class="message-bubble small"><i></i><i></i></div></div><h3>Customer and employee service agent</h3><p>Connect conversational AI with business systems, approvals, and escalation paths.</p><i>02</i></article>
-        <article class="scenario-operations"><span>OPERATIONS</span><div class="scenario-visual" aria-hidden="true"><div class="workflow-card">01<i></i></div><b></b><div class="workflow-card">AI<i></i></div><b></b><div class="workflow-card">✓<i></i></div></div><h3>Document and workflow automation</h3><p>Turn repetitive professional-service processes into traceable agent workflows.</p><i>03</i></article>
+        <article class="scenario-knowledge reveal"><span>KNOWLEDGE</span><div class="scenario-visual" aria-hidden="true"><div class="document-stack"><i></i><i></i><i></i><b>AI</b></div><div class="search-pulse"></div></div><h3>Private enterprise knowledge agent</h3><p>Secure retrieval, internal answers, document understanding, and governed access.</p><i>01</i></article>
+        <article class="scenario-service reveal"><span>SERVICE</span><div class="scenario-visual" aria-hidden="true"><div class="person-dot">AI</div><div class="message-bubble"><i></i><i></i><i></i></div><div class="message-bubble small"><i></i><i></i></div></div><h3>Customer and employee service agent</h3><p>Connect conversational AI with business systems, approvals, and escalation paths.</p><i>02</i></article>
+        <article class="scenario-operations reveal"><span>OPERATIONS</span><div class="scenario-visual" aria-hidden="true"><div class="workflow-card">01<i></i></div><b></b><div class="workflow-card">AI<i></i></div><b></b><div class="workflow-card">✓<i></i></div></div><h3>Document and workflow automation</h3><p>Turn repetitive professional-service processes into traceable agent workflows.</p><i>03</i></article>
       </div>
     </section>
 
-    <section class="cta" aria-labelledby="cta-title">
+    <section class="cta reveal" aria-labelledby="cta-title">
       <div>
         <p class="section-index">Start with one practical workflow</p>
         <h2 id="cta-title">Build your first AgentBox pilot.</h2>
