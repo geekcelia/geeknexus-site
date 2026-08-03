@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
   <link rel="icon" type="image/png" href="assets/geek-nexus-logo-mark.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
   <script src="pwa.js?v=1" defer></script>
 </head>
 <body>
@@ -34,9 +34,11 @@
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
       <a class="active" href="./">Home</a>
+      <a class="nav-secondary" href="#platform">Product</a>
+      <a class="nav-secondary" href="#scenarios">Solutions</a>
+      <a class="nav-secondary" href="#deployment">How it works</a>
       <a href="company/">Company</a>
-      <a class="nav-updates" href="#updates">Updates</a>
-      <a class="nav-cta" href="/salon/">Start a pilot <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a fit call <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -46,18 +48,18 @@
         <p class="eyebrow"><span></span>AgentBox · Enterprise edge AI</p>
         <h1 id="hero-title">Deploy practical AI agents <em>at the edge.</em></h1>
         <p class="intro">Geek Nexus brings hardware, cloud, models, and business workflows into one repeatable deployment environment for enterprise AI adoption.</p>
-        <div class="actions" aria-label="Primary actions">
-          <a class="button primary" href="/salon/">Plan your pilot <span aria-hidden="true">↗</span></a>
+        <div class="actions" role="group" aria-label="Primary actions">
+          <a class="button primary" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a fit call <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="#platform">Explore the platform</a>
         </div>
-        <div class="signal-row" aria-label="Solution characteristics">
+        <div class="signal-row">
           <span><i></i>Edge-first</span>
           <span><i></i>Hybrid cloud</span>
           <span><i></i>Enterprise ready</span>
         </div>
       </div>
 
-      <div class="agent-visual" aria-label="AgentBox deployment architecture">
+      <div class="agent-visual" role="img" aria-label="AgentBox deployment architecture">
         <div class="visual-grid" aria-hidden="true"></div>
         <div class="orbit orbit-one" aria-hidden="true"></div>
         <div class="orbit orbit-two" aria-hidden="true"></div>
@@ -143,19 +145,19 @@
       </div>
     </section>
 
-    <section class="section deployment" aria-labelledby="deployment-title">
+    <section class="section deployment" id="deployment" aria-labelledby="deployment-title">
       <div class="section-heading split-heading">
         <div>
-          <p class="section-index">02 / Deployment model</p>
-          <h2 id="deployment-title">A clearer path from use case to production.</h2>
+          <p class="section-index">02 / Client journey</p>
+          <h2 id="deployment-title">From one workflow to a scalable deployment.</h2>
         </div>
-        <p>We combine solution architecture with scenario integration, so enterprise teams can focus on adoption instead of assembling the entire stack themselves.</p>
+        <p>Each stage has a clear decision, deliverable, and success measure, so teams can validate value before expanding the deployment.</p>
       </div>
       <ol class="steps">
-        <li class="step-discover"><span>01</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Discover</strong><p>Choose a workflow with clear data, privacy, and success criteria.</p></div></li>
-        <li class="step-package"><span>02</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b>+</b></div><div><strong>Package</strong><p>Combine hardware, runtime, models, knowledge, and business tools.</p></div></li>
-        <li class="step-deploy"><span>03</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Deploy</strong><p>Launch an edge or hybrid pilot inside the target environment.</p></div></li>
-        <li class="step-repeat"><span>04</span><div class="step-visual" aria-hidden="true"><i></i><i></i><b>↗</b></div><div><strong>Repeat</strong><p>Turn the validated pattern into a reusable enterprise capability.</p></div></li>
+        <li class="step-discover"><span>01</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Discover</strong><p>Confirm the workflow, users, data boundary, business owner, and measurable success criteria.</p></div></li>
+        <li class="step-package"><span>02</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b>+</b></div><div><strong>Pilot</strong><p>Deploy one governed workflow with the required models, knowledge, tools, and human checkpoints.</p></div></li>
+        <li class="step-deploy"><span>03</span><div class="step-visual" aria-hidden="true"><i></i><i></i><i></i><b></b></div><div><strong>Prove</strong><p>Review adoption, quality, latency, cost, security, and operational readiness against the agreed measures.</p></div></li>
+        <li class="step-repeat"><span>04</span><div class="step-visual" aria-hidden="true"><i></i><i></i><b>↗</b></div><div><strong>Scale</strong><p>Standardize the validated pattern across teams, locations, devices, or additional workflows.</p></div></li>
       </ol>
     </section>
 
@@ -174,27 +176,12 @@
       </div>
     </section>
 
-    <section class="section updates" id="updates" aria-labelledby="updates-title">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="section-index">04 / Updates</p>
-          <h2 id="updates-title">News, events, and deployment stories.</h2>
-        </div>
-        <p>This content hub is ready for a future publishing backend, so the Geek Nexus team can add company news, salon events, and customer cases without rebuilding the website.</p>
-      </div>
-      <div class="updates-grid">
-        <article class="update-news"><span>NEWS</span><div class="update-visual" aria-hidden="true"><i></i><i></i><i></i></div><h3>Company news</h3><p>Product releases, partnerships, and company milestones.</p><small>Content backend coming next</small></article>
-        <article class="update-events"><span>EVENTS</span><div class="update-visual" aria-hidden="true"><b>08</b><i></i></div><h3>Events and salons</h3><p>AgentBox salons, workshops, demonstrations, and invitations.</p><small>Content backend coming next</small></article>
-        <article class="update-cases"><span>CASES</span><div class="update-visual" aria-hidden="true"><i></i><b>AI</b><i></i></div><h3>Deployment cases</h3><p>Practical enterprise AI deployments, outcomes, and reusable patterns.</p><small>Content backend coming next</small></article>
-      </div>
-    </section>
-
     <section class="cta" aria-labelledby="cta-title">
       <div>
         <p class="section-index">Start with one practical workflow</p>
         <h2 id="cta-title">Build your first AgentBox pilot.</h2>
       </div>
-      <a class="cta-link" href="mailto:hello@geeknexus.ai?subject=AgentBox%20pilot">hello@geeknexus.ai <span aria-hidden="true">↗</span></a>
+      <a class="cta-link" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a 30-minute fit call <span aria-hidden="true">↗</span></a>
     </section>
   </main>
 
