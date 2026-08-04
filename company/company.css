@@ -7,6 +7,28 @@
   .js .company-copy > *:nth-child(4) { animation-delay:.21s; }
   .js .company-copy > *:nth-child(5) { animation-delay:.28s; }
   .js .identity-card { animation: hero-visual .9s .18s cubic-bezier(.22,.61,.36,1) both; }
+  .interactive-visual::before,.interactive-visual::after { background:linear-gradient(90deg,var(--blue),var(--green),var(--blue)); background-size:220% 100%; animation:link-flow 3s linear infinite; }
+  .interactive-visual strong { animation:pulse-dot-blue 2.8s ease-out infinite; }
+  .cloud-visual::after { animation:orbit-spin 14s linear infinite; }
+  .cloud-visual i { animation:dot-breathe 3.6s ease-in-out infinite; }
+  .cloud-visual i:nth-child(2) { animation-delay:1.2s; }
+  .cloud-visual i:nth-child(3) { animation-delay:2.4s; }
+  .custom-visual i { animation:chip-sweep-yellow 4.4s ease-in-out infinite; }
+  .custom-visual i:nth-child(3) { animation-delay:.7s; }
+  .custom-visual i:nth-child(5) { animation-delay:1.4s; }
+  .custom-visual b { display:inline-block; animation:arrow-nudge 2.2s ease-in-out infinite; }
+}
+@keyframes pulse-dot-blue { 0% { box-shadow:0 0 0 0 rgba(26,115,232,.3); } 70% { box-shadow:0 0 0 10px rgba(26,115,232,0); } 100% { box-shadow:0 0 0 0 rgba(26,115,232,0); } }
+@keyframes dot-breathe { 0%,100% { transform:scale(1); } 50% { transform:scale(1.28); } }
+@keyframes chip-sweep-yellow { 0%,100% { border-color:#ead49c; background:#fff; box-shadow:0 8px 20px rgba(155,105,0,.08); } 50% { border-color:#dfb541; background:#fffdf4; box-shadow:0 8px 22px rgba(155,105,0,.16); } }
+@keyframes arrow-nudge { 0%,100% { transform:translateX(0); opacity:.7; } 50% { transform:translateX(3px); opacity:1; } }
+
+.outcome-list article { transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease; }
+.outcome-list article:hover { transform:translateY(-4px); border-color:var(--line-strong); box-shadow:0 12px 30px rgba(60,64,67,.09); }
+.audience-clusters span { transition:transform .25s ease,box-shadow .25s ease; }
+.audience-clusters span:hover { transform:translateY(-3px); box-shadow:0 10px 24px rgba(60,64,67,.08); }
+@media (hover:none) {
+  .outcome-list article:hover,.audience-clusters span:hover { transform:none; }
 }
 .company-hero { min-height:0; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(350px,.65fr); align-items:center; gap:clamp(44px,7vw,110px); max-width:1540px; margin:0 auto; padding:clamp(24px,2.5vw,38px) clamp(20px,5vw,76px) clamp(38px,4vw,58px); }
 .company-copy { max-width:940px; }
