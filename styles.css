@@ -157,6 +157,15 @@ h1 em { display: block; color: transparent; background: linear-gradient(95deg, v
   .core-status span { animation: pulse-dot 2.6s ease-out infinite; }
   .eyebrow span { animation: pulse-dot-green 3.2s ease-out infinite; }
   .cloud-orbit::before { animation: orbit-spin 16s linear infinite; }
+  .architecture-link i::before { animation: packet-right 2.4s cubic-bezier(.42,0,.58,1) infinite; }
+  .architecture-link i::after { animation: packet-left 2.4s cubic-bezier(.42,0,.58,1) 1.2s infinite; }
+  .edge-zone .architecture-node { animation: node-pulse 3.6s ease-in-out infinite; }
+  .edge-zone .architecture-node:nth-of-type(2) { animation-delay:.6s; }
+  .edge-zone .architecture-node:nth-of-type(3) { animation-delay:1.2s; }
+  .runtime-modules span { animation: chip-sweep 4.4s ease-in-out infinite; }
+  .runtime-modules span:nth-child(2) { animation-delay:.55s; }
+  .runtime-modules span:nth-child(3) { animation-delay:1.1s; }
+  .runtime-modules span:nth-child(4) { animation-delay:1.65s; }
   .architecture-link i { background:linear-gradient(90deg,var(--blue),var(--green),var(--blue)); background-size:220% 100%; animation: link-flow 3.4s linear infinite; }
   .cta { background:linear-gradient(135deg,#1a73e8,#4285f4,#1a73e8); background-size:240% 240%; animation: cta-drift 14s ease-in-out infinite; }
   .company-contact { background:linear-gradient(135deg,#1a73e8,#4285f4,#1a73e8); background-size:240% 240%; animation: cta-drift 14s ease-in-out infinite; }
@@ -168,6 +177,16 @@ h1 em { display: block; color: transparent; background: linear-gradient(95deg, v
 @keyframes pulse-dot { 0% { box-shadow:0 0 0 0 rgba(52,168,83,.35); } 70% { box-shadow:0 0 0 9px rgba(52,168,83,0); } 100% { box-shadow:0 0 0 0 rgba(52,168,83,0); } }
 @keyframes pulse-dot-green { 0% { box-shadow:0 0 0 5px rgba(52,168,83,.1); } 55% { box-shadow:0 0 0 9px rgba(52,168,83,.05); } 100% { box-shadow:0 0 0 5px rgba(52,168,83,.1); } }
 @keyframes link-flow { to { background-position:-220% 0; } }
+@keyframes packet-right { 0% { left:0; opacity:.25; } 12% { opacity:1; } 88% { opacity:1; } 100% { left:calc(100% - 8px); opacity:.25; } }
+@keyframes packet-left { 0% { right:0; opacity:.25; } 12% { opacity:1; } 88% { opacity:1; } 100% { right:calc(100% - 8px); opacity:.25; } }
+@keyframes packet-down { 0% { top:0; opacity:.25; } 12% { opacity:1; } 88% { opacity:1; } 100% { top:calc(100% - 8px); opacity:.25; } }
+@keyframes packet-up { 0% { bottom:0; opacity:.25; } 12% { opacity:1; } 88% { opacity:1; } 100% { bottom:calc(100% - 8px); opacity:.25; } }
+@keyframes node-pulse { 0%,100% { border-color:#e5eaf0; box-shadow:none; } 50% { border-color:#9fc3f3; box-shadow:0 0 0 3px rgba(26,115,232,.09); } }
+@keyframes chip-sweep { 0%,100% { border-color:#dce7f5; background:#fff; } 50% { border-color:#9fc3f3; background:#eef5ff; } }
+@media (max-width:760px) and (prefers-reduced-motion: no-preference) {
+  .architecture-link i::before { animation-name:packet-down; }
+  .architecture-link i::after { animation-name:packet-up; }
+}
 @keyframes cta-drift { 0%,100% { background-position:0% 0; } 50% { background-position:100% 100%; } }
 
 /* Scroll reveal (JS-gated, progressive enhancement) */
