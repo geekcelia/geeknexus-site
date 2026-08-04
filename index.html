@@ -17,6 +17,9 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.geeknexus.ai/">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Geek Nexus | Enterprise AI at the Edge">
+  <meta name="twitter:description" content="Deploy governed enterprise AI agents across edge and hybrid-cloud environments.">
+  <link rel="canonical" href="https://www.geeknexus.ai/">
   <link rel="icon" type="image/png" href="assets/geek-nexus-logo-mark.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -24,9 +27,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=19">
+  <link rel="stylesheet" href="styles.css?v=20">
   <script src="site.js?v=2" defer></script>
   <script src="pwa.js?v=1" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.geeknexus.ai/#organization",
+        "name": "Geek Nexus Technology Limited",
+        "url": "https://www.geeknexus.ai/",
+        "logo": "https://www.geeknexus.ai/assets/geek-nexus-logo-mark.png",
+        "email": "hello@geeknexus.ai",
+        "founder": { "@type": "Person", "name": "Huan (Cecelia) Shu" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Hong Kong", "addressCountry": "HK" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.geeknexus.ai/#agentbox",
+        "name": "Geek Nexus AgentBox",
+        "provider": { "@id": "https://www.geeknexus.ai/#organization" },
+        "description": "A repeatable deployment solution for governed enterprise AI agents across edge and hybrid-cloud environments.",
+        "areaServed": "Worldwide",
+        "serviceType": "Enterprise AI agent deployment"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -44,7 +73,7 @@
       <a class="nav-secondary" href="#deployment">How it works</a>
       <a href="company/">Company</a>
       <a class="nav-secondary" href="commercial/">Commercial model</a>
-      <a class="nav-cta" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a fit call <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" data-cta="header-email" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Email our team <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
@@ -54,8 +83,9 @@
         <p class="eyebrow"><span></span>AgentBox · Enterprise edge AI</p>
         <h1 id="hero-title">Deploy practical AI agents <em>at the edge.</em></h1>
         <p class="intro">Geek Nexus brings hardware, cloud, models, and business workflows into one repeatable deployment environment for enterprise AI adoption.</p>
+        <p class="fit-line"><span>Best fit</span> Mid-sized enterprises with sensitive data and one repeatable workflow ready to improve.</p>
         <div class="actions" role="group" aria-label="Primary actions">
-          <a class="button primary" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a fit call <span aria-hidden="true">↗</span></a>
+          <a class="button primary" data-cta="hero-email" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Email our team <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="#platform">Explore the platform</a>
         </div>
         <div class="signal-row">
@@ -92,6 +122,20 @@
       <p>Built in Hong Kong<br>for enterprise deployment.</p>
     </section>
 
+    <section class="credibility reveal" aria-labelledby="credibility-title">
+      <div class="credibility-copy">
+        <p class="section-index">Why Geek Nexus</p>
+        <h2 id="credibility-title">Enterprise cloud experience, applied to practical AI.</h2>
+        <p>Founder-led by Huan (Cecelia) Shu, with nearly a decade across cloud, CDN, edge computing, AI solutions, and enterprise technology projects.</p>
+        <a href="company/#founder">Meet the founder <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="credibility-evidence" aria-label="Founder credentials and delivery experience">
+        <article><span>EXPERIENCE</span><strong>Cloud &amp; edge since 2017</strong><p>Enterprise solution work across gaming, internet, retail, finance, and manufacturing.</p></article>
+        <article><span>TECHNICAL</span><strong>AWS SAA · Tencent TCP · Alibaba ACP</strong><p>Architecture fluency combined with commercial and delivery execution.</p></article>
+        <article><span>EDUCATION</span><strong>HKUST MSc</strong><p>Global operations background with executive study in AI and digital business.</p></article>
+      </div>
+    </section>
+
     <section class="section platform" id="platform" aria-labelledby="platform-title">
       <div class="section-heading reveal">
         <p class="section-index">01 / Platform</p>
@@ -104,8 +148,8 @@
           <div class="card-top"><span class="card-number">A1</span><span class="card-tag">Orchestration</span></div>
           <div class="architecture-visual" aria-hidden="true">
             <div class="architecture-head">
-              <span><i></i>Live deployment topology</span>
-              <strong>Hybrid · HK-01</strong>
+              <span><i></i>Reference deployment topology</span>
+              <strong>Edge + Hybrid</strong>
             </div>
             <div class="architecture-flow">
               <div class="architecture-zone edge-zone">
@@ -126,13 +170,24 @@
               <div class="architecture-zone cloud-zone">
                 <span class="zone-label">CLOUD SERVICES</span>
                 <div class="cloud-orbit"><i></i><i></i><i></i><span>CLOUD</span></div>
-                <div class="cloud-metrics"><span><b>12</b> agents</span><span><b>99.9%</b> uptime</span></div>
+                <div class="cloud-metrics"><span><b>Governed</b> agents</span><span><b>Observable</b> runtime</span></div>
               </div>
             </div>
             <div class="architecture-status">
               <span><i></i>Private data stays local</span>
-              <span>Policy synced <b>12 sec ago</b></span>
+              <span><b>Illustrative status data</b></span>
             </div>
+          </div>
+          <div class="mobile-architecture" aria-label="Simplified AgentBox deployment architecture">
+            <div class="mobile-arch-node"><span>01</span><div><strong>Edge site &amp; private data</strong><small>Compute, files, sensors, and enterprise tools stay within the agreed boundary.</small></div></div>
+            <i aria-hidden="true"></i>
+            <div class="mobile-arch-node mobile-arch-core"><span>02</span><div><strong>AgentBox control layer</strong><small>Models, tools, retrieval, policy, and human checkpoints run in one governed runtime.</small></div></div>
+            <i aria-hidden="true"></i>
+            <div class="mobile-arch-node"><span>03</span><div><strong>Cloud &amp; business systems</strong><small>Connect managed services, CRM, ERP, knowledge, and APIs when the workflow requires them.</small></div></div>
+            <details>
+              <summary>Architecture controls</summary>
+              <ul><li>Encrypted connections</li><li>Private or hybrid execution</li><li>Observable runtime and policy</li></ul>
+            </details>
           </div>
           <h3>One control layer across edge and cloud.</h3>
           <p>Coordinate models, tools, data access, device health, and policy from a consistent runtime.</p>
@@ -188,12 +243,16 @@
         <p class="section-index">Start with one practical workflow</p>
         <h2 id="cta-title">Build your first AgentBox pilot.</h2>
       </div>
-      <a class="cta-link" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Book a 30-minute fit call <span aria-hidden="true">↗</span></a>
+      <div class="cta-action">
+        <a class="cta-link" data-cta="footer-email" href="mailto:hello@geeknexus.ai?subject=AgentBox%20fit%20call">Email hello@geeknexus.ai <span aria-hidden="true">↗</span></a>
+        <small>30-minute fit review · one workflow · no obligation</small>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div><img src="assets/geek-nexus-logo-mark.png" alt=""><span><strong>Geek Nexus Technology Limited</strong><small>Enterprise AI agents, packaged for the edge.</small></span></div>
+    <div class="footer-brand"><img src="assets/geek-nexus-logo-mark.png" alt=""><span><strong>Geek Nexus Technology Limited</strong><small>Enterprise AI agents, packaged for the edge.</small></span></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="mailto:hello@geeknexus.ai">Email</a><a href="company/">Company</a><a href="#platform">Platform</a></nav>
     <p>Hong Kong · © 2026 Geek Nexus</p>
   </footer>
 </body>
