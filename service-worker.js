@@ -1,16 +1,17 @@
-const CACHE_NAME = "geek-nexus-shell-v11";
+const CACHE_NAME = "geek-nexus-shell-v12";
 const APP_SHELL = [
   "/",
   "/company/",
   "/commercial/",
-  "/styles.css?v=21",
+  "/styles.css?v=22",
   "/company/company.css?v=21",
   "/commercial/commercial.css?v=1",
   "/site.js?v=2",
   "/manifest.webmanifest",
   "/assets/icon-192.png",
   "/assets/apple-touch-icon.png",
-  "/assets/geek-nexus-logo-mark.png"
+  "/assets/geek-nexus-logo-mark.png",
+  "/assets/ai-pioneer-research-society-logo.png"
 ];
 
 self.addEventListener("install", (event) => {
