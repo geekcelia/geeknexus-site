@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>AWS 企业内训中心 | Geek Nexus</title>
+  <meta name="description" content="Geek Nexus 企业内部 AWS 学习中心：从模型定制、评测与 AI 芯片，到 RAG、Amazon Bedrock、AgentCore 和生产架构。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="/assets/geek-nexus-logo-mark.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="training.css?v=1">
+  <script src="training.js?v=1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="gn-nav" aria-label="网站页眉">
+    <a class="gn-brand" href="/" aria-label="返回 Geek Nexus 首页">
+      <span class="gn-brand-mark"><img src="/assets/geek-nexus-logo-mark.png" alt=""></span>
+      <span><strong>Geek Nexus</strong><small>Technology Limited</small></span>
+    </a>
+    <nav class="gn-links" aria-label="内训导航">
+      <a href="#learning-path">学习路径</a>
+      <a href="#modules">课程模块</a>
+      <a href="#assessment">结业自测</a>
+      <a class="home-link" href="/">公司官网 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Geek Nexus · Internal Academy</p>
+        <h1 id="hero-title">把 AWS 学成一套<br><span>能做决策的系统</span></h1>
+        <p class="hero-lede">从 AWS Summit 现场 PDF 的六条主线出发，再用 AWS 中文官方文档校准：老板看投资与风险，技术团队看架构与实现，业务团队看流程与治理。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#learning-path">选择学习路径</a>
+          <a class="button secondary" href="#modules">直接进入课程</a>
+        </div>
+        <p class="privacy-note">进度只保存在当前浏览器，不上传姓名、答案或员工数据。</p>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/aws-knowledge-hero.webp" width="1672" height="941" alt="由云、模型、数据库、向量与工具构成的 AWS 知识地图">
+        <figcaption>视觉用于帮助理解关系；产品定义与实施边界以对应 AWS 官方文档为准。</figcaption>
+      </figure>
+    </section>
+
+    <section class="route-strip" aria-label="课程概览">
+      <div class="shell route-grid">
+        <div><strong>6</strong><span>核心模块</span></div>
+        <div><strong>3</strong><span>角色路径</span></div>
+        <div><strong>45–90</strong><span>分钟建议时长</span></div>
+        <div><strong>8</strong><span>道结业自测</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="learning-path" aria-labelledby="path-title">
+      <div class="section-heading">
+        <p class="kicker">先选角色，再看重点</p>
+        <h2 id="path-title">同一套 AWS 能力，三种学习视角</h2>
+        <p>选择角色后，课程会标出优先模块。内容不会消失，方便跨角色建立共同语言。</p>
+      </div>
+      <div class="role-picker" role="group" aria-label="选择学习角色">
+        <button type="button" class="role-button active" data-role="owner" aria-pressed="true"><strong>老板 / 管理者</strong><span>投资、风险、价值与治理</span></button>
+        <button type="button" class="role-button" data-role="builder" aria-pressed="false"><strong>产品 / 技术</strong><span>架构、服务选择与实现</span></button>
+        <button type="button" class="role-button" data-role="operator" aria-pressed="false"><strong>业务 / 运营</strong><span>流程、数据边界与人工接管</span></button>
+      </div>
+      <div class="role-guidance" aria-live="polite">
+        <span id="role-label">老板路径</span>
+        <p id="role-copy">先判断 RAG、微调和 Agent 各自解决什么问题，再用安全、成本与可观测性决定是否值得进入试点。</p>
+      </div>
+    </section>
+
+    <section class="section learning-board" id="modules" aria-labelledby="modules-title">
+      <div class="shell">
+        <div class="board-head">
+          <div class="section-heading compact">
+            <p class="kicker">来自 Summit PDF 的知识主线</p>
+            <h2 id="modules-title">六个模块，一条生产链路</h2>
+            <p>每个模块都包含现场材料的核心意思、官方文档校准、企业决策问题和完成标记。</p>
+          </div>
+          <div class="progress-card" aria-labelledby="progress-title">
+            <div><strong id="progress-title">学习进度</strong><span id="progress-count">0 / 6</span></div>
+            <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" aria-label="已完成课程数"><i id="progress-fill"></i></div>
+            <button type="button" id="reset-progress">重置本机进度</button>
+          </div>
+        </div>
+
+        <div class="course-map" aria-label="AWS AI 生产链路">
+          <span>定制模型</span><b aria-hidden="true">→</b><span>评测模型</span><b aria-hidden="true">→</b><span>选择算力</span><b aria-hidden="true">→</b><span>连接数据</span><b aria-hidden="true">→</b><span>编排 Agent</span><b aria-hidden="true">→</b><span>治理上线</span>
+        </div>
+
+        <div class="module-list">
+          <article class="module-card priority" id="nova" data-module="nova" data-priority="owner,builder">
+            <div class="module-index"><span>01</span><i class="accent blue"></i></div>
+            <div class="module-body">
+              <header><p>模型定制 · Nova Forge</p><h3>让模型学会企业知识，又不忘掉原来的能力</h3></header>
+              <p class="module-summary">PDF 先讲“灾难性遗忘”，再进入检查点与数据混合。关键不是把企业文档全部塞给模型，而是在可塑性与稳定性之间做可验证的取舍。</p>
+              <div class="lesson-grid">
+                <div><strong>现场材料说什么</strong><p>用中间检查点、持续预训练（CPT）、监督微调（SFT）和强化微调（RFT）进行领域适配，并同时观察通用能力回退。</p></div>
+                <div><strong>官方文档校准</strong><p>Nova Forge 提供开放训练检查点、Nova 精选数据混合、奖励函数与配方。数据混合比例没有固定答案，要以小规模对照实验寻找平衡。</p></div>
+                <div><strong>企业决策问题</strong><p>如果知识需要频繁更新，先考虑 RAG；只有当任务行为、领域语言或可验证推理需要改变时，才进入微调或 CPT。</p></div>
+              </div>
+              <figure class="module-visual"><img src="assets/model-training-map.webp" width="1448" height="1086" alt="通用数据与领域数据通过检查点、训练和评测形成定制模型"><figcaption>训练不是单向灌输：领域收益和通用能力需要双轨评测。</figcaption></figure>
+              <details><summary>训练方法怎么选</summary><div class="detail-copy"><p><b>CPT</b> 用于大量无标签领域语料；<b>SFT</b> 用高质量输入输出示例塑造任务行为；<b>RFT</b> 用可计算奖励优化多步决策。数据少、目标窄时优先参数高效微调；变化快、需要来源引用时优先 RAG。</p></div></details>
+              <div class="module-footer"><div class="source-links"><a href="https://docs.aws.amazon.com/zh_cn/nova/latest/userguide/nova-forge.html" target="_blank" rel="noopener noreferrer">Nova Forge ↗</a><a href="https://docs.aws.amazon.com/zh_cn/nova/latest/userguide/nova-forge-cpt.html" target="_blank" rel="noopener noreferrer">CPT 与检查点 ↗</a></div><label class="complete"><input type="checkbox" data-complete="nova"><span>标记完成</span></label></div>
+            </div>
+          </article>
+
+          <article class="module-card" id="evaluation" data-module="evaluation" data-priority="owner,builder,operator">
+            <div class="module-index"><span>02</span><i class="accent red"></i></div>
+            <div class="module-body">
+              <header><p>评测闭环 · VOC / Benchmark</p><h3>先把真实业务问题写进测试集，再谈模型排名</h3></header>
+              <p class="module-summary">PDF 把客户之声（VOC）、场景 Benchmark 与 MMLU 放在一起。通用榜单只能作参照，真正的上线标准来自真实问法、边界案例与业务容错线。</p>
+              <div class="lesson-grid four">
+                <div><strong>能力层</strong><p>推理、数学、代码、长上下文与指令遵循。</p></div>
+                <div><strong>任务层</strong><p>基于 VOC 的任务完成率、事实性与引用质量。</p></div>
+                <div><strong>生产层</strong><p>延迟、吞吐、成本、失败率与可观察性。</p></div>
+                <div><strong>安全层</strong><p>越权、敏感信息、提示注入与人工升级。</p></div>
+              </div>
+              <div class="decision-note"><strong>管理者要拿到什么</strong><p>一张把业务损失、质量指标和成本放在一起的验收表；不能只拿一个“模型得分”做采购或上线决定。</p></div>
+              <div class="module-footer"><div class="source-links"><a href="https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/evaluation.html" target="_blank" rel="noopener noreferrer">Bedrock 评测 ↗</a></div><label class="complete"><input type="checkbox" data-complete="evaluation"><span>标记完成</span></label></div>
+            </div>
+          </article>
+
+          <article class="module-card" id="neuron" data-module="neuron" data-priority="builder">
+            <div class="module-index"><span>03</span><i class="accent yellow"></i></div>
+            <div class="module-body">
+              <header><p>AI 基础设施 · Neuron</p><h3>把图像模型从“能运行”优化到“能稳定交付”</h3></header>
+              <p class="module-summary">PDF 的 FLUX 与 Qwen Image Edit 案例聚焦并行策略、算子适配、显存和吞吐。Neuron 是框架与 AWS AI 芯片之间的编译、运行和分析软件栈。</p>
+              <div class="process-list" aria-label="Neuron 优化循环"><div><b>1</b><span><strong>拆流水线</strong>识别文本编码、去噪网络、VAE 与后处理边界。</span></div><div><b>2</b><span><strong>编译模型</strong>控制输入形状，排查不支持算子和 CPU 回退。</span></div><div><b>3</b><span><strong>实测瓶颈</strong>分别测首张延迟、稳态吞吐、并发与内存。</span></div><div><b>4</b><span><strong>扩大规模</strong>让数据、张量或流水线并行匹配实例拓扑。</span></div></div>
+              <div class="decision-note warning"><strong>不要照抄现场数字</strong><p>演讲中的性能结果依赖模型版本、输入尺寸、精度、实例和 Neuron SDK 版本。上线前必须依据当前支持矩阵重新验证。</p></div>
+              <div class="module-footer"><div class="source-links"><a href="https://awsdocs-neuron.readthedocs-hosted.com/en/latest/" target="_blank" rel="noopener noreferrer">AWS Neuron 文档 ↗</a><a href="https://docs.aws.amazon.com/zh_cn/sagemaker/latest/dg/sagemaker-hyperpod.html" target="_blank" rel="noopener noreferrer">SageMaker HyperPod ↗</a></div><label class="complete"><input type="checkbox" data-complete="neuron"><span>标记完成</span></label></div>
+            </div>
+          </article>
+
+          <article class="module-card" id="vectors" data-module="vectors" data-priority="builder,operator">
+            <div class="module-index"><span>04</span><i class="accent green"></i></div>
+            <div class="module-body">
+              <header><p>企业数据 · S3 Vectors / RAG</p><h3>把海量向量放在成本友好的专用存储里</h3></header>
+              <p class="module-summary">PDF 把 S3 Vectors 定位为 Agent、RAG 和语义搜索的向量存储。官方文档强调免预置、按使用付费、S3 级弹性与持久性，以及面向不同查询频率的延迟区间。</p>
+              <div class="choice-grid">
+                <div><strong>S3 Vectors</strong><span>海量向量、长期保留、成本优先</span><p>向量存储桶 → 向量索引 → 带元数据的向量记录。</p></div>
+                <div><strong>Bedrock Knowledge Bases</strong><span>托管 RAG、少搭管道</span><p>摄取、切分、嵌入、检索和生成形成托管流程。</p></div>
+                <div><strong>OpenSearch</strong><span>低延迟、高 QPS、复杂搜索</span><p>适合混合搜索、聚合、分面和高级过滤。</p></div>
+              </div>
+              <div class="decision-note"><strong>数据边界先于向量化</strong><p>原文档的权限不会自动变成向量权限。摄取前要保留数据分类、租户边界与删除机制，检索时按身份做元数据过滤。</p></div>
+              <div class="module-footer"><div class="source-links"><a href="https://docs.aws.amazon.com/zh_cn/AmazonS3/latest/userguide/s3-vectors.html" target="_blank" rel="noopener noreferrer">S3 Vectors ↗</a><a href="https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/knowledge-base.html" target="_blank" rel="noopener noreferrer">Bedrock 知识库 ↗</a></div><label class="complete"><input type="checkbox" data-complete="vectors"><span>标记完成</span></label></div>
+            </div>
+          </article>
+
+          <article class="module-card" id="bedrock" data-module="bedrock" data-priority="owner,builder,operator">
+            <div class="module-index"><span>05</span><i class="accent blue"></i></div>
+            <div class="module-body">
+              <header><p>生成式 AI 平台 · Amazon Bedrock</p><h3>模型只是底层，平台价值在统一推理与治理</h3></header>
+              <p class="module-summary">PDF 的模型墙是入口；Bedrock 把模型推理、Knowledge Bases、Agents、评测和 Guardrails 放进同一服务层，再由 IAM、KMS、CloudTrail 与网络控制包住治理边界。</p>
+              <div class="layer-stack" aria-label="Bedrock 五层理解法"><div><span>应用与工作流</span><b>业务界面 · 人工审批 · 结果交付</b></div><div><span>Agent 与知识</span><b>Agents · Knowledge Bases · 检索引用</b></div><div><span>评测与保护</span><b>Evaluation · Guardrails</b></div><div><span>模型推理</span><b>统一 API · 容量与模型选择</b></div><div><span>云端治理</span><b>IAM · KMS · CloudTrail · 网络边界</b></div></div>
+              <details><summary>一条安全的 RAG 请求怎么走</summary><div class="detail-copy"><p>应用先认证用户并判断其数据权限；输入接受必要检查后转换为查询向量；知识库只检索该用户有权访问的片段并保留来源；模型生成后再次应用 Guardrails；最后记录最少但足够的追踪信息，并避免把密钥或敏感正文写入日志。</p></div></details>
+              <div class="module-footer"><div class="source-links"><a href="https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/what-is-bedrock.html" target="_blank" rel="noopener noreferrer">Amazon Bedrock ↗</a><a href="https://docs.aws.amazon.com/zh_cn/bedrock/latest/userguide/guardrails.html" target="_blank" rel="noopener noreferrer">Guardrails ↗</a></div><label class="complete"><input type="checkbox" data-complete="bedrock"><span>标记完成</span></label></div>
+            </div>
+          </article>
+
+          <article class="module-card" id="agentcore" data-module="agentcore" data-priority="owner,builder,operator">
+            <div class="module-index"><span>06</span><i class="accent red"></i></div>
+            <div class="module-body">
+              <header><p>Agent 生产化 · AgentCore</p><h3>让 Agent 能被授权、观察、限制和接管</h3></header>
+              <p class="module-summary">PDF 中的移动 Agent、自动化和供应链案例共同指向：Agent 不是一次模型调用。它会保留上下文、调用工具并代表用户行动，因此需要生产级运行边界。</p>
+              <figure class="module-visual wide"><img src="assets/agent-rag-map.webp" width="1568" height="1003" alt="企业文档、向量检索、Agent、身份、网关与工具组成的受控架构"><figcaption>知识进入上下文；身份、网关和可观测性控制 Agent 如何行动。</figcaption></figure>
+              <div class="capability-grid">
+                <div><strong>Runtime</strong><p>托管代理和工具的运行环境，支持会话隔离与长运行工作负载。</p></div><div><strong>Memory</strong><p>区分即时记忆、长期记忆、业务数据库与审计记录。</p></div><div><strong>Gateway</strong><p>把 Lambda 和 API 转成受管工具，集中施加策略。</p></div><div><strong>Identity</strong><p>协调 IAM、OAuth 与 API 密钥，缩小每次代理行动的权限。</p></div><div><strong>Built-in tools</strong><p>在隔离环境中提供浏览器和代码解释器能力。</p></div><div><strong>Observability</strong><p>通过 CloudWatch 与 OTEL 观察调用、延迟、错误、指标和追踪。</p></div>
+              </div>
+              <div class="module-footer"><div class="source-links"><a href="https://docs.aws.amazon.com/zh_cn/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html" target="_blank" rel="noopener noreferrer">AgentCore 概览 ↗</a><a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html" target="_blank" rel="noopener noreferrer">可观测性 ↗</a></div><label class="complete"><input type="checkbox" data-complete="agentcore"><span>标记完成</span></label></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell blueprint" aria-labelledby="blueprint-title">
+      <div class="section-heading">
+        <p class="kicker">把知识变成公司能力</p>
+        <h2 id="blueprint-title">Geek Nexus 的试点判断框架</h2>
+        <p>不是把六个服务全部买齐，而是先从一个可衡量、可回退的工作流开始。</p>
+      </div>
+      <div class="blueprint-grid">
+        <div class="blueprint-flow">
+          <div><span>企业数据源</span><small>分类、权限、保留期</small></div><b>→</b><div><span>检索与模型</span><small>RAG 优先，必要时定制</small></div><b>→</b><div><span>Agent 行动</span><small>最小权限工具</small></div><b>→</b><div><span>审批与审计</span><small>高风险动作人工确认</small></div>
+        </div>
+        <div class="launch-checklist">
+          <h3>进入试点前，负责人要回答 8 个问题</h3>
+          <ol><li>目标工作流的业务损失和成功指标是什么？</li><li>谁能访问哪些数据、模型和工具？</li><li>知识更新用 RAG 是否已经足够？</li><li>怎样检测领域收益与通用能力回退？</li><li>向量方案优先成本还是最低延迟？</li><li>哪些动作必须人工批准或可撤销？</li><li>日志如何避免记录敏感正文与凭证？</li><li>超时、限流和第三方不可用时如何降级？</li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section assessment" id="assessment" aria-labelledby="assessment-title">
+      <div class="shell assessment-layout">
+        <div class="assessment-intro">
+          <p class="kicker">8 题 · 约 6 分钟</p>
+          <h2 id="assessment-title">结业自测</h2>
+          <p>不是考产品名，而是检查团队能否做出一致的架构与治理判断。提交后只在本页显示结果。</p>
+          <div class="score-box" id="score-box" hidden tabindex="-1"><span>本次得分</span><strong id="score">0 / 8</strong><p id="score-message"></p></div>
+        </div>
+        <form id="quiz" novalidate>
+          <fieldset><legend>1. 企业知识每周更新，且回答需要引用来源，第一选择通常是？</legend><label><input type="radio" name="q1" value="a"> 直接做 CPT</label><label><input type="radio" name="q1" value="b"> 先建设 RAG</label><label><input type="radio" name="q1" value="c"> 只增加提示词长度</label></fieldset>
+          <fieldset><legend>2. 数据混合在 Nova Forge 定制中的主要价值是？</legend><label><input type="radio" name="q2" value="a"> 让训练完全不需要评测</label><label><input type="radio" name="q2" value="b"> 降低遗忘风险并稳定适配过程</label><label><input type="radio" name="q2" value="c"> 自动决定所有超参数</label></fieldset>
+          <fieldset><legend>3. 为什么不能只用 MMLU 决定模型是否上线？</legend><label><input type="radio" name="q3" value="a"> 它不能覆盖真实业务任务、安全、延迟与成本</label><label><input type="radio" name="q3" value="b"> 它只测试网络带宽</label><label><input type="radio" name="q3" value="c"> 它是图像格式</label></fieldset>
+          <fieldset><legend>4. 哪个选择最适合海量、成本敏感且查询不频繁的向量数据？</legend><label><input type="radio" name="q4" value="a"> S3 Vectors</label><label><input type="radio" name="q4" value="b"> 只用关系型表扫描</label><label><input type="radio" name="q4" value="c"> 把向量写进浏览器缓存</label></fieldset>
+          <fieldset><legend>5. Guardrails 能替代应用自己的身份与授权吗？</legend><label><input type="radio" name="q5" value="a"> 能，启用后不再需要 IAM</label><label><input type="radio" name="q5" value="b"> 不能，它是纵深防御的一层</label><label><input type="radio" name="q5" value="c"> 只在离线训练时能</label></fieldset>
+          <fieldset><legend>6. Agent 调用退款、转账或删除工具时，最重要的额外控制是？</legend><label><input type="radio" name="q6" value="a"> 更长的系统提示词</label><label><input type="radio" name="q6" value="b"> 最小权限、参数校验、审批与可审计执行</label><label><input type="radio" name="q6" value="c"> 隐藏按钮</label></fieldset>
+          <fieldset><legend>7. Neuron 性能优化为什么必须重新实测？</legend><label><input type="radio" name="q7" value="a"> 结果依赖模型、形状、精度、实例与 SDK 版本</label><label><input type="radio" name="q7" value="b"> 因为所有芯片速度完全随机</label><label><input type="radio" name="q7" value="c"> 因为官方文档没有任何作用</label></fieldset>
+          <fieldset><legend>8. 一个合适的企业 AI 首个试点应该是？</legend><label><input type="radio" name="q8" value="a"> 一次覆盖全公司全部流程</label><label><input type="radio" name="q8" value="b"> 单一、可衡量、可回退且边界清楚的流程</label><label><input type="radio" name="q8" value="c"> 没有负责人也可以上线的流程</label></fieldset>
+          <p class="form-error" id="quiz-error" role="alert"></p>
+          <button class="button primary submit-quiz" type="submit">提交并查看结果</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section shell sources-section" aria-labelledby="source-title">
+      <div class="section-heading compact">
+        <p class="kicker">来源与边界</p>
+        <h2 id="source-title">现场负责提出问题，官方文档负责定义能力</h2>
+      </div>
+      <div class="source-policy">
+        <p>课程以本地 AWS Summit PDF 中的 Nova Forge、VOC / Benchmark、Neuron、S3 Vectors、Amazon Bedrock 与 AgentCore 模块为结构线索；技术定义仅引用 AWS 官方文档。第三方展台和案例只作为行业场景，不扩写成 AWS 产品承诺。</p>
+        <p><strong>核对日期：2026-09-04。</strong> 区域、配额、模型、预览状态与定价会变化，实施前必须再次检查目标区域的官方页面。</p>
+        <a class="text-link" href="https://docs.aws.amazon.com/zh_cn/" target="_blank" rel="noopener noreferrer">打开 AWS 中文文档中心 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="gn-footer">
+    <div class="footer-brand"><img src="/assets/geek-nexus-logo-mark.png" alt=""><span><strong>Geek Nexus Technology Limited</strong><small>Enterprise AI agents, packaged for the edge.</small></span></div>
+    <nav aria-label="页脚导航"><a href="/">官网首页</a><a href="/company/">公司介绍</a><a href="mailto:hello@geeknexus.ai">联系团队</a></nav>
+    <p>Internal learning material · © 2026 Geek Nexus</p>
+  </footer>
+</body>
+</html>
