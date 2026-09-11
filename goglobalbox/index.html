@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Global Box 企业跨境网络终端 · Geek Nexus</title>
+<meta name="description" content="Go Global Box 企业跨境网络终端 — For Enterprise · For Developers。稳定访问海外 AI、跨境电商、国际直播与全球营销，即插即用、安全可控。">
+<meta property="og:title" content="Go Global Box 企业跨境网络终端">
+<meta property="og:description" content="For Enterprise · For Developers — 面向海外 AI、跨境电商、国际直播及全球营销场景的企业跨境网络终端。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.geeknexus.ai/goglobalbox/">
+<style>
+  :root {
+    --blue-deep: #1a4a7a;
+    --blue: #2e6da4;
+    --blue-light: #e8f1f9;
+    --blue-pale: #f4f8fc;
+    --gold: #c9a86a;
+    --ink: #2b3a4a;
+    --gray: #6b7a8a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--blue-pale);
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  .page { max-width: 860px; margin: 0 auto; background: #fff; }
+
+  /* ===== 头部 ===== */
+  .hero {
+    background: linear-gradient(160deg, #123a63 0%, #1a4a7a 45%, #2e6da4 100%);
+    color: #fff;
+    padding: 56px 48px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -120px; top: -120px;
+    width: 360px; height: 360px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 50%;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    right: -60px; top: -60px;
+    width: 240px; height: 240px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+  }
+  .brand {
+    font-size: 14px;
+    letter-spacing: 4px;
+    opacity: .85;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-dot {
+    width: 10px; height: 10px;
+    background: var(--gold);
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+  .hero .en {
+    font-size: 12px;
+    letter-spacing: 6px;
+    opacity: .6;
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .hero h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+  .hero p.sub {
+    font-size: 15px;
+    opacity: .85;
+    max-width: 520px;
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 6px 18px;
+    border: 1px solid rgba(201,168,106,.8);
+    color: #e8d5b0;
+    font-size: 13px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+  }
+  .hero .slogan {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #e8d5b0;
+    margin-bottom: 16px;
+  }
+  .hero .slogan .sep {
+    color: var(--gold);
+    margin: 0 10px;
+    font-weight: 700;
+  }
+
+  /* ===== IP 形象条 ===== */
+  .ip-strip {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 32px 48px;
+    background: var(--blue-light);
+  }
+  .ip-strip img {
+    width: 110px; height: 110px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 16px rgba(26,74,122,.18);
+  }
+  .ip-strip .txt h3 {
+    color: var(--blue-deep);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .ip-strip .txt p { font-size: 13.5px; color: var(--gray); }
+
+  /* ===== 区块通用 ===== */
+  section { padding: 48px; }
+  .sec-title {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+  .sec-title .cn {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    letter-spacing: 4px;
+  }
+  .sec-title .en {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--gold);
+    margin-top: 4px;
+  }
+  .sec-title .line {
+    width: 48px; height: 2px;
+    background: var(--gold);
+    margin: 14px auto 0;
+  }
+
+  /* ===== 应用场景 ===== */
+  .scenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .scene {
+    border: 1px solid #dce7f2;
+    border-radius: 10px;
+    padding: 26px 24px;
+    background: linear-gradient(180deg, #fbfdff, #f4f8fc);
+    transition: box-shadow .2s;
+  }
+  .scene:hover { box-shadow: 0 6px 20px rgba(26,74,122,.1); }
+  .scene .no {
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .scene h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 8px;
+  }
+  .scene p { font-size: 13.5px; color: var(--gray); }
+
+  /* ===== 核心优势 ===== */
+  .strengths {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .strength {
+    text-align: center;
+    padding: 30px 18px;
+    border-radius: 10px;
+    background: var(--blue-light);
+  }
+  .strength .icon {
+    width: 52px; height: 52px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--blue);
+    box-shadow: 0 3px 10px rgba(26,74,122,.12);
+  }
+  .strength h4 {
+    color: var(--blue-deep);
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+  .strength p { font-size: 13px; color: var(--gray); }
+
+  /* ===== 页脚 ===== */
+  footer {
+    background: var(--blue-deep);
+    color: rgba(255,255,255,.85);
+    text-align: center;
+    padding: 36px 48px;
+  }
+  footer .fname {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  footer .fsite {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+  footer .fcontact {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: rgba(255,255,255,.92);
+    letter-spacing: .5px;
+  }
+  footer .fnote {
+    margin-top: 14px;
+    font-size: 12px;
+    opacity: .55;
+  }
+
+  /* ===== 打印 / PDF 一页 A4 ===== */
+  @page { size: A4; margin: 0; }
+  @media print {
+    /* zoom 仅用于打印导出 */ html { zoom: .74; }
+    body { background: #fff; }
+    .page { max-width: none; box-shadow: none; }
+    .hero { padding: 40px 40px 34px; }
+    .hero h1 { font-size: 46px; }
+    .hero h2 { font-size: 20px; margin-bottom: 14px; }
+    .hero p.sub { font-size: 13px; }
+    .badge { margin-top: 18px; }
+    .ip-strip { padding: 20px 40px; }
+    .ip-strip img { width: 88px; height: 88px; }
+    section { padding: 30px 40px; }
+    .sec-title { margin-bottom: 22px; }
+    .sec-title .cn { font-size: 21px; }
+    .scene { padding: 18px 20px; }
+    .scene h4 { font-size: 16px; }
+    .scene p { font-size: 12px; }
+    .strength { padding: 20px 14px; }
+    .strength h4 { font-size: 15px; }
+    .strength p { font-size: 12px; }
+    footer { padding: 16px 40px; }
+    footer .fnote { margin-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 头部 -->
+  <div class="hero">
+    <a class="brand" href="/" style="text-decoration:none;color:inherit;"><span class="brand-dot"></span>GEEK NEXUS ↩</a>
+    <div class="en">MAKE CONNECTIVITY SIMPLE · CROSS-BORDER NETWORK TERMINAL</div>
+    <h1>Go Global Box</h1>
+    <h2>企业跨境网络终端</h2>
+    <div class="slogan">For Enterprise<span class="sep">·</span>For Developers</div>
+    <p class="sub">面向海外 AI、跨境电商、国际直播及全球营销场景，为企业提供稳定、安全、即插即用的跨境网络接入能力。</p>
+    <span class="badge">合规通道 · 企业级交付</span>
+  </div>
+
+  <!-- IP 形象 -->
+  <div class="ip-strip">
+    <img src="geekcelia-ip.jpg" alt="Geek Nexus IP 形象">
+    <div class="txt">
+      <h3>让跨境连接，像本地网络一样简单</h3>
+      <p>预配置交付 · 接入现有网络即可使用 · 白名单管理辅助合规运营</p>
+    </div>
+  </div>
+
+  <!-- 应用场景 -->
+  <section>
+    <div class="sec-title">
+      <div class="cn">应用场景</div>
+      <div class="en">APPLICATION SCENARIOS</div>
+      <div class="line"></div>
+    </div>
+    <div class="scenes">
+      <div class="scene">
+        <div class="no">01</div>
+        <h4>海外 AI</h4>
+        <p>稳定访问 ChatGPT、Claude、Gemini 等海外 AI 服务，支撑企业 AI 应用落地。</p>
+      </div>
+      <div class="scene">
+        <div class="no">02</div>
+        <h4>跨境电商</h4>
+        <p>支撑 eBay、Shopee 等跨境平台运营与多店铺网络接入。</p>
+      </div>
+      <div class="scene">
+        <div class="no">03</div>
+        <h4>国际直播</h4>
+        <p>提供纯净原生 IP，保障 TikTok、Twitch 等平台本地化直播的稳定接入。</p>
+      </div>
+      <div class="scene">
+        <div class="no">04</div>
+        <h4>全球营销</h4>
+        <p>多地区网络覆盖，支撑全球广告投放与海外运营。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心优势 -->
+  <section style="padding-top:0;">
+    <div class="sec-title">
+      <div class="cn">核心优势</div>
+      <div class="en">CORE STRENGTHS</div>
+      <div class="line"></div>
+    </div>
+    <div class="strengths">
+      <div class="strength">
+        <div class="icon">⚡</div>
+        <h4>即插即用</h4>
+        <p>预配置交付，接入现有网络即可使用，无需复杂部署。</p>
+      </div>
+      <div class="strength">
+        <div class="icon">🚀</div>
+        <h4>高速稳定</h4>
+        <p>采用高速网络技术，提供稳定流畅的跨境上网体验。</p>
+      </div>
+      <div class="strength">
+        <div class="icon">🛡</div>
+        <h4>安全可控</h4>
+        <p>白名单管理机制，辅助企业合规运营。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="fname">Geek Nexus</div>
+    <div class="fsite">www.geeknexus.ai</div>
+    <div class="fcontact">
+      <div>hello@geeknexus.ai（公开咨询）</div>
+      <div>cecelia@geeknexus.ai（商务合作）</div>
+    </div>
+    <div class="fnote">For Enterprise · For Developers — Enterprise AI at the Edge</div>
+  </footer>
+
+</div>
+</body>
+</html>
