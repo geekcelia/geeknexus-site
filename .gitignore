@@ -1,1 +1,4 @@
 .wrangler/
+router-mvp/.env
+router-mvp/node_modules/
+jobs/premium-seed.json

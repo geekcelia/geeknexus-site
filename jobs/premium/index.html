@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Geek Nexus">
+  <title>WLB 求职信息榜 · 付费专区 | Geek Nexus</title>
+  <meta name="description" content="游戏云 WLB 求职信息榜：互联网与游戏行业公司内推码与直投岗位合集，持续更新。¥10 解锁查看。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://www.geeknexus.ai/jobs/premium/">
+  <link rel="icon" type="image/png" href="../../assets/geek-nexus-logo-mark.png">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css?v=22">
+  <link rel="stylesheet" href="../jobs.css?v=2">
+  <link rel="stylesheet" href="premium.css?v=2">
+  <script src="premium.js?v=2" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="nav premium-nav" aria-label="Site header">
+    <a class="brand" href="../../" aria-label="Geek Nexus home">
+      <span class="brand-mark-wrap"><img class="brand-mark" src="../../assets/geek-nexus-logo-mark.png" alt=""></span>
+      <span class="brand-copy"><strong>Geek Nexus</strong><small>Technology Limited</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="../../">Home</a>
+      <a href="../">人才社区</a>
+      <span class="nav-price" id="nav-price">¥10</span>
+      <a class="nav-cta" href="#unlock-panel">解锁查看 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="premium-page">
+    <section class="premium-hero" aria-labelledby="premium-title">
+      <div class="premium-hero-copy">
+        <p class="eyebrow"><span></span>付费专区 · 持续更新</p>
+        <h1 id="premium-title">一条内推，<em>值回票价。</em></h1>
+        <p class="premium-intro" id="hero-intro">游戏云 WLB 求职信息榜：一线互联网与游戏公司的内推入口、直投岗位和投递姿势，一次解锁长期看更新。</p>
+        <div class="premium-stats" id="hero-stats" aria-label="榜单统计">
+          <div><strong id="stat-companies">11</strong><span>家公司</span></div>
+          <div><strong id="stat-active">4</strong><span>条已生效内推</span></div>
+          <div><strong id="stat-updated">—</strong><span>最近更新</span></div>
+        </div>
+      </div>
+      <aside class="price-card" aria-label="价格与解锁">
+        <div class="price-head"><span>UNLOCK</span><b id="price-badge">¥10</b></div>
+        <p>一次解锁 · 长期有效<br>榜单更新后凭同一解锁码继续查看</p>
+        <a class="button primary" href="#unlock-panel">扫码解锁</a>
+        <small>信息来自公开渠道与朋友分享，仅供交流参考</small>
+      </aside>
+    </section>
+
+    <div class="demo-banner" id="demo-banner" hidden>
+      <span>演示模式：后端尚未连接，演示解锁码 <b>WLB-DEMO</b>。部署 jobs-api Worker 后自动切换为真实数据。</span>
+    </div>
+
+    <!-- ===== 锁定态：打码预览 ===== -->
+    <section class="premium-section" id="locked-view" aria-labelledby="locked-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">榜单预览 · 已脱敏</p>
+          <h2 id="locked-title">看看都有谁在招人。</h2>
+        </div>
+        <p>公司、岗位、地点免费可见；内推码、投递链接和联系方式解锁后展示。</p>
+      </div>
+      <div class="premium-grid" id="preview-grid"></div>
+    </section>
+
+    <!-- ===== 解锁面板 ===== -->
+    <section class="premium-section premium-section-alt" id="unlock-panel" aria-labelledby="unlock-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">解锁 · 三步搞定</p>
+          <h2 id="unlock-title">¥10，把这堵墙拆了。</h2>
+        </div>
+        <p>支付 10 元后获取解锁码，输入即可查看全部内推码、投递链接与联系方式。</p>
+      </div>
+      <div class="unlock-card">
+        <ol class="unlock-steps">
+          <li><b>01</b><div><strong>扫码支付 ¥10</strong><small>打开支付宝「扫一扫」，右侧收款码</small></div></li>
+          <li><b>02</b><div><strong>获取解锁码</strong><small>加站长微信或发邮件，备注「WLB + 你的称呼」</small></div></li>
+          <li><b>03</b><div><strong>输入解锁码查看</strong><small>下方输入，长期有效，更新可续看</small></div></li>
+        </ol>
+        <div class="pay-panel">
+          <img src="assets/payment-qr.png" alt="支付宝收款二维码" width="200" height="300">
+          <div class="pay-info">
+            <span>支付宝扫码支付</span>
+            <strong id="pay-price">¥10 / 次</strong>
+            <small>站长微信与邮箱见页面底部</small>
+          </div>
+        </div>
+        <form class="unlock-form" id="unlock-form" novalidate>
+          <input type="text" id="unlock-code" maxlength="32" autocomplete="off" placeholder="输入解锁码，例如 WLB-XXXXXXXX" aria-label="解锁码">
+          <button class="button primary" type="submit" id="unlock-btn">解锁查看</button>
+          <p class="form-status" id="unlock-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== 解锁态：完整榜单 ===== -->
+    <section class="premium-section" id="unlocked-view" hidden aria-labelledby="unlocked-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">完整榜单 · 已解锁</p>
+          <h2 id="unlocked-title">拿好，祝上岸。</h2>
+        </div>
+        <p>点击内推码即可复制；投递时按各公司说明填入。标「更新中」的条目开通后会推送给你。</p>
+      </div>
+      <div class="premium-updated"><i></i>最近更新：<b id="unlocked-updated">—</b><span>（解锁码长期有效，回来看更新不用再付）</span></div>
+      <div class="premium-grid" id="full-grid"></div>
+    </section>
+
+    <footer class="premium-foot">
+      <p>本榜单由 Geek Nexus 人才社区整理，信息来自公开渠道与朋友分享，仅供交流参考，投递结果以各公司官方流程为准。</p>
+      <p class="premium-foot-links">站长微信 / 合作咨询：<a href="mailto:hello@geeknexus.ai?subject=WLB%E6%A6%9C%E5%8D%95%E8%A7%A3%E9%94%81">hello@geeknexus.ai</a> · <a href="../">返回人才社区</a></p>
+    </footer>
+  </main>
+</body>
+</html>

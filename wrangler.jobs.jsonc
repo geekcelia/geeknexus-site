@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "geeknexus-jobs-api",
+  "main": "workers/jobs-api.mjs",
+  "compatibility_date": "2026-08-25",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "api.geeknexus.ai/jobs*",
+      "zone_name": "geeknexus.ai"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "JOBS_KV",
+      "id": "250182b830c64016a1a9569d90e0203c"
+    }
+  ],
+  // R2 当前账号未开通；开通后把下面注释去掉即可（简历存储会自动切到 R2）
+  // "r2_buckets": [
+  //   { "binding": "RESUMES", "bucket_name": "geeknexus-resumes" }
+  // ],
+  "observability": {
+    "enabled": true,
+    "logs": {
+      "head_sampling_rate": 1
+    }
+  }
+}

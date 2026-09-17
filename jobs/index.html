@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Geek Nexus">
+  <title>Geek Nexus 人才社区 | 内推码与求职交流</title>
+  <meta name="description" content="Geek Nexus 人才社区：互联网与游戏行业的内推码共享和求职意向交流平台。企业发布内推码，求职者挂出意向与简历。">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Geek Nexus 人才社区">
+  <meta property="og:description" content="内推码共享 · 求职意向交流 · 互联网与游戏行业">
+  <meta property="og:image" content="https://www.geeknexus.ai/assets/og-light.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.geeknexus.ai/jobs/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Geek Nexus 人才社区">
+  <meta name="twitter:description" content="内推码共享 · 求职意向交流 · 互联网与游戏行业">
+  <link rel="canonical" href="https://www.geeknexus.ai/jobs/">
+  <link rel="icon" type="image/png" href="../assets/geek-nexus-logo-mark.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=22">
+  <link rel="stylesheet" href="jobs.css?v=3">
+  <script src="../site.js?v=2" defer></script>
+  <script src="jobs.js?v=2" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="nav jobs-nav" aria-label="Site header">
+    <a class="brand" href="../" aria-label="Geek Nexus home">
+      <span class="brand-mark-wrap"><img class="brand-mark" src="../assets/geek-nexus-logo-mark.png" alt=""></span>
+      <span class="brand-copy"><strong>Geek Nexus</strong><small>Technology Limited</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="../">Home</a>
+      <a class="nav-secondary" href="../#platform">Product</a>
+      <a class="nav-secondary" href="../#scenarios">Solutions</a>
+      <a href="../company/">Company</a>
+      <a class="active" href="./">人才社区</a>
+      <button class="nav-lang" type="button" data-lang-toggle aria-label="Switch language">EN</button>
+      <a class="nav-cta" href="#post-referral" data-cta="jobs-header-post">发布内推 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main class="jobs-page">
+    <section class="jobs-hero" aria-labelledby="jobs-title">
+      <div class="jobs-hero-copy">
+        <p class="eyebrow"><span></span><span data-i18n="hero.eyebrow">人才社区 · 内推与求职交流</span></p>
+        <h1 id="jobs-title" data-i18n-html="hero.title">找工作这件事，<em>抱团更快。</em></h1>
+        <p class="jobs-intro" data-i18n="hero.intro">这里是一个面向互联网与游戏行业朋友的交流平台：有内推资源的人挂出内推码，正在看机会的人挂出求职意向和简历。平台只做信息撮合，不参与招聘流程、不收取任何费用。</p>
+        <div class="jobs-hero-actions" role="group" aria-label="Primary actions">
+          <a class="button primary" href="#referrals" data-i18n="hero.actionBrowse">看内推码</a>
+          <a class="button secondary" href="#post-resume" data-i18n="hero.actionPost">我要挂简历</a>
+        </div>
+        <div class="signal-row">
+          <span><i></i><span data-i18n="hero.sig1">免费交流</span></span>
+          <span><i></i><span data-i18n="hero.sig2">实名内推</span></span>
+          <span><i></i><span data-i18n="hero.sig3">简历仅授权可见</span></span>
+        </div>
+      </div>
+      <aside class="jobs-hero-card" aria-label="How it works">
+        <div class="jhc-head"><span>HOW IT WORKS</span><i>GN</i></div>
+        <ol>
+          <li><b>01</b><div><strong data-i18n="hero.card1t">企业/员工发布内推码</strong><small data-i18n="hero.card1d">审核通过后上墙，求职者直接使用</small></div></li>
+          <li><b>02</b><div><strong data-i18n="hero.card2t">求职者挂出意向</strong><small data-i18n="hero.card2d">意向岗位、地点、薪酬、期望单位一目了然</small></div></li>
+          <li><b>03</b><div><strong data-i18n="hero.card3t">双方直接对接</strong><small data-i18n="hero.card3d">内推码直接用；简历经站长授权给到企业方</small></div></li>
+        </ol>
+        <p><i></i><span data-i18n="hero.cardNote">平台不抽成、不代谈 offer，只做信息中转</span></p>
+      </aside>
+    </section>
+
+    <a class="premium-promo" href="premium/" aria-label="WLB 求职信息榜付费专区">
+      <div class="pp-copy">
+        <span class="pp-badge" data-i18n="pp.badge">付费专区</span>
+        <strong data-i18n="pp.title">游戏云 WLB 求职信息榜</strong>
+        <small data-i18n="pp.desc">11 家公司内推入口 + 直投岗位 · ¥10 解锁长期看更新</small>
+      </div>
+      <span class="pp-arrow" aria-hidden="true">¥10 解锁 <i>→</i></span>
+    </a>
+
+    <div class="demo-banner" id="demo-banner" hidden>
+      <span data-i18n="demo.banner">演示模式：后端尚未连接，以下为示例数据。部署 jobs-api Worker 后自动切换为真实数据。</span>
+    </div>
+
+    <section class="jobs-section" id="referrals" aria-labelledby="referrals-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">01 / <span data-i18n="sec.referrals.index">内推码墙</span></p>
+          <h2 id="referrals-title" data-i18n="sec.referrals.title">拿走就能用的内推码。</h2>
+        </div>
+        <p data-i18n="sec.referrals.desc">以下内推码由各公司员工或 HR 提供，均经人工审核。点击内推码即可复制，投递时填入官网投递页对应栏位。</p>
+      </div>
+
+      <div class="search-row">
+        <div class="search-box">
+          <input type="search" id="referral-search" data-i18n-ph="sec.referrals.searchPh" placeholder="搜索公司、岗位或城市…" aria-label="Search referral codes">
+        </div>
+        <a class="button secondary post-link" href="#post-referral" data-i18n="sec.referrals.post">我也有内推码要分享</a>
+      </div>
+
+      <div class="referral-grid" id="referral-grid" aria-live="polite"></div>
+      <p class="empty-state" id="referral-empty" data-i18n="sec.referrals.empty" hidden>暂无内推码，做第一个分享的人。</p>
+    </section>
+
+    <section class="jobs-section jobs-section-alt" id="intents" aria-labelledby="intents-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">02 / <span data-i18n="sec.intents.index">求职意向墙</span></p>
+          <h2 id="intents-title" data-i18n="sec.intents.title">正在看机会的人。</h2>
+        </div>
+        <p data-i18n="sec.intents.desc">求职者公开的意向信息如下。简历文件不公开展示——企业方如需某位求职者的简历，请通过页面底部邮箱联系站长获取授权。</p>
+      </div>
+
+      <div class="search-row">
+        <div class="search-box">
+          <input type="search" id="intent-search" data-i18n-ph="sec.intents.searchPh" placeholder="搜索意向岗位或城市…" aria-label="Search job intents">
+        </div>
+        <a class="button secondary post-link" href="#post-resume" data-i18n="sec.intents.post">我也要挂意向</a>
+      </div>
+
+      <div class="intent-grid" id="intent-grid" aria-live="polite"></div>
+      <p class="empty-state" id="intent-empty" data-i18n="sec.intents.empty" hidden>还没有人挂意向，来打样。</p>
+    </section>
+
+    <section class="jobs-section" id="post-referral" aria-labelledby="post-referral-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">03 / <span data-i18n="sec.postRef.index">发布内推码</span></p>
+          <h2 id="post-referral-title" data-i18n="sec.postRef.title">分享一个内推机会。</h2>
+        </div>
+        <p data-i18n="sec.postRef.desc">提交后由站长人工审核，通过后 24 小时内上墙。你的联系方式仅站长可见，不会公开展示。</p>
+      </div>
+
+      <form class="jobs-form" id="referral-form" novalidate>
+        <div class="field">
+          <label for="rf-company" data-i18n="f.company">公司 *</label>
+          <input id="rf-company" name="company" type="text" maxlength="60" required data-i18n-ph="f.companyPh" placeholder="例如：某云计算大厂">
+        </div>
+        <div class="field">
+          <label for="rf-role" data-i18n="f.role">岗位 *</label>
+          <input id="rf-role" name="role" type="text" maxlength="80" required data-i18n-ph="f.rolePh" placeholder="例如：CDN 产品经理 / 服务端开发">
+        </div>
+        <div class="field">
+          <label for="rf-location" data-i18n="f.location">工作地点 *</label>
+          <input id="rf-location" name="location" type="text" maxlength="60" required data-i18n-ph="f.locationPh" placeholder="例如：上海 / 深圳 / 远程">
+        </div>
+        <div class="field">
+          <label for="rf-code" data-i18n="f.code">内推码（或内推链接）*</label>
+          <input id="rf-code" name="code" type="text" maxlength="160" required data-i18n-ph="f.codePh" placeholder="例如：NT2026ABC 或 https://…">
+        </div>
+        <div class="field">
+          <label for="rf-note" data-i18n="f.note">岗位说明 / 要求</label>
+          <input id="rf-note" name="note" type="text" maxlength="300" data-i18n-ph="f.notePh" placeholder="例如：3 年以上经验，看重 CDN/GCP 背景，走得急">
+        </div>
+        <div class="field">
+          <label for="rf-contact" data-i18n="f.contact">你的联系方式（仅站长可见）</label>
+          <input id="rf-contact" name="contact" type="text" maxlength="120" data-i18n-ph="f.contactPh" placeholder="微信 / 邮箱，方便失效后通知更新">
+        </div>
+        <button class="button primary form-submit" type="submit" data-i18n="f.submitRef">提交内推码</button>
+        <p class="form-status" id="referral-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="jobs-section jobs-section-alt" id="post-resume" aria-labelledby="post-resume-title">
+      <div class="jobs-heading">
+        <div>
+          <p class="section-index">04 / <span data-i18n="sec.postResume.index">挂出求职意向</span></p>
+          <h2 id="post-resume-title" data-i18n="sec.postResume.title">让机会找到你。</h2>
+        </div>
+        <p data-i18n="sec.postResume.desc">填写意向并上传简历（PDF / DOC / DOCX，≤10MB）。审核通过后，你的意向卡片会上墙；简历文件本身不公开，仅在你同意的情况下经站长转交给企业方。</p>
+      </div>
+
+      <form class="jobs-form" id="intent-form" novalidate>
+        <div class="field">
+          <label for="if-role" data-i18n="f.iRole">意向岗位 *</label>
+          <input id="if-role" name="role" type="text" maxlength="80" required data-i18n-ph="f.iRolePh" placeholder="例如：云产品经理 / 游戏运营">
+        </div>
+        <div class="field">
+          <label for="if-location" data-i18n="f.iLocation">意向地点 *</label>
+          <input id="if-location" name="location" type="text" maxlength="60" required data-i18n-ph="f.iLocationPh" placeholder="例如：上海 / 深圳 / 香港 / 远程">
+        </div>
+        <div class="field field-salary">
+          <label for="if-salary" data-i18n="f.iSalary">期望薪酬 *</label>
+          <div class="salary-row">
+            <input id="if-salary" name="salaryNum" type="text" inputmode="decimal" maxlength="20" required data-i18n-ph="f.iSalaryPh" placeholder="例如：25">
+            <select id="if-salary-unit" name="salaryUnit" aria-label="Salary unit">
+              <option value="K/月" selected>K/月</option>
+              <option value="万/年">万/年</option>
+              <option value="面议" data-i18n-opt="f.unitNeg">面议</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="if-company-type" data-i18n="f.iCompany">意向单位 / 方向 *</label>
+          <input id="if-company-type" name="companyType" type="text" maxlength="80" required data-i18n-ph="f.iCompanyPh" placeholder="例如：云计算大厂 / 游戏出海公司 / 不限">
+        </div>
+        <div class="field field-wide">
+          <label for="if-note" data-i18n="f.iNote">一句话介绍自己</label>
+          <input id="if-note" name="note" type="text" maxlength="300" data-i18n-ph="f.iNotePh" placeholder="例如：5 年云行业售前，熟悉游戏出海场景，英语可开会">
+        </div>
+        <div class="field">
+          <label for="if-contact" data-i18n="f.iContact">联系方式（选填）</label>
+          <input id="if-contact" name="contact" type="text" maxlength="120" data-i18n-ph="f.iContactPh" placeholder="微信 / 邮箱">
+        </div>
+        <div class="field field-wide field-file">
+          <label for="if-resume" data-i18n="f.iResume">简历文件 *</label>
+          <input id="if-resume" name="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+          <small data-i18n="f.iResumeHint">PDF / DOC / DOCX，不超过 10MB。简历不会公开展示。</small>
+        </div>
+        <label class="check field-wide" for="if-contact-public">
+          <input type="checkbox" id="if-contact-public" name="contactPublic">
+          <span data-i18n="f.iPublic">公开我的联系方式（勾选后，企业方可直接联系你；不勾选则通过站长中转）</span>
+        </label>
+        <label class="check field-wide" for="if-agree">
+          <input type="checkbox" id="if-agree" name="agree" required>
+          <span data-i18n="f.iAgree">我了解并同意：本平台为免费信息交流区，提交的意向信息经审核后公开展示，简历仅在企业方提出需求并经站长转交时提供。 *</span>
+        </label>
+        <button class="button primary form-submit" type="submit" data-i18n="f.submitIntent">提交意向与简历</button>
+        <p class="form-status" id="intent-status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="jobs-cta reveal" aria-labelledby="jobs-cta-title">
+      <div>
+        <p class="section-index" data-i18n="cta.index">企业方看过来</p>
+        <h2 id="jobs-cta-title" data-i18n="cta.title">想触达这些求职者？</h2>
+        <p data-i18n="cta.desc">如果你在招人、想查看完整简历或发布批量内推码，邮件联系站长，说明公司与岗位需求。</p>
+      </div>
+      <div class="cta-action">
+        <a class="cta-link" href="mailto:hello@geeknexus.ai?subject=Jobs%20community%20-%20resume%20access">hello@geeknexus.ai <span aria-hidden="true">↗</span></a>
+        <small data-i18n="cta.small">1 个工作日内回复 · 简历转交前会征求求职者同意</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer jobs-footer">
+    <div class="footer-brand"><img src="../assets/geek-nexus-logo-mark.png" alt=""><span><strong>Geek Nexus Technology Limited</strong><small data-i18n="footer.tag">人才社区 · 免费信息交流平台</small></span></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="mailto:hello@geeknexus.ai">Email</a><a href="../company/">Company</a><a href="../#platform">Platform</a><a href="../">Home</a></nav>
+    <p data-i18n="footer.copy">Hong Kong · © 2026 Geek Nexus · 本社区仅为信息交流平台，不参与任何招聘流程</p>
+  </footer>
+</body>
+</html>
