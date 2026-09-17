@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geek Nexus 上海办公室 · 访客指南 | Geek Nexus</title>
+<meta name="description" content="Geek Nexus 上海办公室（徐汇鑫耀中城）：地址、交通、环境与访客指南 — 停车、快递、大件搬运与卸货区说明，一次看全。">
+<meta property="og:title" content="Geek Nexus 上海办公室 · 访客指南">
+<meta property="og:description" content="徐汇鑫耀中城 T1 · 地址、交通、环境与访客指南 — 停车 / 快递 / 搬运卸货，一次看全。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.geeknexus.ai/office/">
+<style>
+  :root {
+    --blue-deep: #1a4a7a;
+    --blue: #2e6da4;
+    --blue-light: #e8f1f9;
+    --blue-pale: #f4f8fc;
+    --gold: #c9a86a;
+    --ink: #2b3a4a;
+    --gray: #6b7a8a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--blue-pale);
+    color: var(--ink);
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  .page { max-width: 920px; margin: 0 auto; background: #fff; }
+
+  /* ===== 头部 ===== */
+  .hero {
+    background: linear-gradient(160deg, #123a63 0%, #1a4a7a 45%, #2e6da4 100%);
+    color: #fff;
+    padding: 56px 48px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -120px; top: -120px;
+    width: 360px; height: 360px;
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 50%;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    right: -60px; top: -60px;
+    width: 240px; height: 240px;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+  }
+  .brand {
+    font-size: 14px;
+    letter-spacing: 4px;
+    opacity: .85;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-dot {
+    width: 10px; height: 10px;
+    background: var(--gold);
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+  .hero .en {
+    font-size: 12px;
+    letter-spacing: 6px;
+    opacity: .6;
+    margin-bottom: 12px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .hero h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+  .hero p.sub {
+    font-size: 15px;
+    opacity: .85;
+    max-width: 560px;
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 6px 18px;
+    border: 1px solid rgba(201,168,106,.8);
+    color: #e8d5b0;
+    font-size: 13px;
+    letter-spacing: 3px;
+    border-radius: 2px;
+  }
+
+  /* ===== 区块通用 ===== */
+  section { padding: 48px; }
+  .sec-title { text-align: center; margin-bottom: 36px; }
+  .sec-title .cn {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    letter-spacing: 4px;
+  }
+  .sec-title .en {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: var(--gold);
+    margin-top: 4px;
+  }
+  .sec-title .line {
+    width: 48px; height: 2px;
+    background: var(--gold);
+    margin: 14px auto 0;
+  }
+
+  /* ===== 信息卡 ===== */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .info-card {
+    border: 1px solid #dce7f2;
+    border-radius: 10px;
+    padding: 24px;
+    background: linear-gradient(180deg, #fbfdff, #f4f8fc);
+    transition: box-shadow .2s;
+  }
+  .info-card:hover { box-shadow: 0 6px 20px rgba(26,74,122,.1); }
+  .info-card .icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .info-card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .info-card p { font-size: 13.5px; color: var(--gray); }
+  .info-card p + p { margin-top: 6px; }
+
+  /* ===== 照片 ===== */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .photo {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dce7f2;
+    background: var(--blue-light);
+    text-decoration: none;
+    display: block;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .photo:hover { box-shadow: 0 8px 24px rgba(26,74,122,.16); transform: translateY(-2px); }
+  .photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .photo figcaption {
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--blue-deep);
+    font-weight: 600;
+    background: #fbfdff;
+    border-top: 1px solid #e4edf5;
+  }
+
+  /* ===== 访客指南 ===== */
+  .guide {
+    display: grid;
+    gap: 20px;
+  }
+  .guide-item {
+    border: 1px solid #dce7f2;
+    border-radius: 10px;
+    padding: 24px;
+    background: #fff;
+  }
+  .guide-item .g-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .guide-item .g-head .icon {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    flex: none;
+  }
+  .guide-item h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue-deep);
+    letter-spacing: 1px;
+  }
+  .guide-item h4 small {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  .guide-item ul { list-style: none; }
+  .guide-item li {
+    font-size: 13.5px;
+    color: var(--ink);
+    padding: 7px 0 7px 20px;
+    position: relative;
+    border-bottom: 1px dashed #e4edf5;
+  }
+  .guide-item li:last-child { border-bottom: none; }
+  .guide-item li::before {
+    content: "";
+    position: absolute;
+    left: 2px; top: 15px;
+    width: 7px; height: 7px;
+    background: var(--gold);
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
+  .guide-item li b { color: var(--blue-deep); font-weight: 700; }
+  .guide-item li.warn { color: #a05a2c; }
+  .guide-item li.warn::before { background: #d99a5b; }
+
+  /* ===== 页脚 ===== */
+  footer {
+    background: var(--blue-deep);
+    color: rgba(255,255,255,.85);
+    text-align: center;
+    padding: 36px 48px;
+  }
+  footer .fname {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  footer .fsite {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+  footer .fcontact {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.9;
+    color: rgba(255,255,255,.92);
+    letter-spacing: .5px;
+  }
+  footer .fnote {
+    margin-top: 14px;
+    font-size: 12px;
+    opacity: .55;
+  }
+
+  @media (max-width: 720px) {
+    .hero { padding: 40px 24px 32px; }
+    .hero h1 { font-size: 34px; }
+    .hero h2 { font-size: 17px; letter-spacing: 3px; }
+    section { padding: 32px 24px; }
+    .info-grid, .gallery { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 头部 -->
+  <div class="hero">
+    <a class="brand" href="/" style="text-decoration:none;color:inherit;"><span class="brand-dot"></span>GEEK NEXUS ↩</a>
+    <div class="en">SHANGHAI OFFICE · VISITOR GUIDE</div>
+    <h1>上海办公室</h1>
+    <h2>徐汇 · 鑫耀中城</h2>
+    <p class="sub">Geek Nexus 上海办公点位于徐汇区鑫耀中城 T1 栋 18 楼。地铁三线交汇，6 万方商业配套，洽谈与会面均在此进行。</p>
+    <span class="badge">上海市徐汇区 · 鑫耀中城 T1 栋 18 楼 1807C</span>
+  </div>
+
+  <!-- 办公地点 -->
+  <section>
+    <div class="sec-title">
+      <div class="cn">办公地点</div>
+      <div class="en">LOCATION</div>
+      <div class="line"></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="icon">📍</div>
+        <h4>办公地址</h4>
+        <p>上海市徐汇区鑫耀中城</p>
+        <p><b>T1 栋 18 楼 · 1807C 室</b></p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🚇</div>
+        <h4>地铁交通</h4>
+        <p>9 号线 · 桂林路站 4 号口</p>
+        <p>12 / 15 号线 · 桂林公园站 5 号口</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">❄️</div>
+        <h4>楼宇空调</h4>
+        <p>周一至周五 9:00–19:00</p>
+        <p>周末及晚间到访请提前告知，以便安排</p>
+      </div>
+      <div class="info-card">
+        <div class="icon">🏙</div>
+        <h4>周边配套</h4>
+        <p>6 万方商业 + 4.5 万方邻里中心</p>
+        <p>体育馆 · 剧院 · 多功能厅 · 托幼 · 养老等</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 环境照片 -->
+  <section style="padding-top:0;">
+    <div class="sec-title">
+      <div class="cn">环境一览</div>
+      <div class="en">OUR SPACE</div>
+      <div class="line"></div>
+    </div>
+    <div class="gallery">
+      <a class="photo" href="photos/lobby-1.jpg" target="_blank">
+        <img src="photos/lobby-1.jpg" alt="大堂及电梯" loading="lazy">
+        <figcaption>大堂及电梯</figcaption>
+      </a>
+      <a class="photo" href="photos/lobby-2.jpg" target="_blank">
+        <img src="photos/lobby-2.jpg" alt="大堂及电梯" loading="lazy">
+        <figcaption>大堂及电梯</figcaption>
+      </a>
+      <a class="photo" href="photos/lounge-1.jpg" target="_blank">
+        <img src="photos/lounge-1.jpg" alt="三楼公区" loading="lazy">
+        <figcaption>三楼公区</figcaption>
+      </a>
+      <a class="photo" href="photos/lounge-2.jpg" target="_blank">
+        <img src="photos/lounge-2.jpg" alt="三楼公区" loading="lazy">
+        <figcaption>三楼公区</figcaption>
+      </a>
+      <a class="photo" href="photos/lounge-3.jpg" target="_blank">
+        <img src="photos/lounge-3.jpg" alt="三楼公区" loading="lazy">
+        <figcaption>三楼公区</figcaption>
+      </a>
+      <a class="photo" href="photos/auditorium.jpg" target="_blank">
+        <img src="photos/auditorium.jpg" alt="路演厅" loading="lazy">
+        <figcaption>路演厅</figcaption>
+      </a>
+      <a class="photo" href="photos/meeting.jpg" target="_blank">
+        <img src="photos/meeting.jpg" alt="共享会议室" loading="lazy">
+        <figcaption>共享会议室</figcaption>
+      </a>
+      <a class="photo" href="photos/office-ref.jpg" target="_blank">
+        <img src="photos/office-ref.jpg" alt="办公室参考" loading="lazy">
+        <figcaption>办公室参考</figcaption>
+      </a>
+    </div>
+  </section>
+
+  <!-- 访客指南 -->
+  <section style="padding-top:0;">
+    <div class="sec-title">
+      <div class="cn">访客指南</div>
+      <div class="en">VISITOR GUIDE</div>
+      <div class="line"></div>
+    </div>
+    <div class="guide">
+
+      <div class="guide-item">
+        <div class="g-head">
+          <div class="icon">🚇</div>
+          <h4>到访交通<small>METRO</small></h4>
+        </div>
+        <ul>
+          <li><b>9 号线</b> 桂林路站 <b>4 号口</b></li>
+          <li><b>12 / 15 号线</b> 桂林公园站 <b>5 号口</b></li>
+        </ul>
+      </div>
+
+      <div class="guide-item">
+        <div class="g-head">
+          <div class="icon">🅿️</div>
+          <h4>访客停车<small>PARKING</small></h4>
+        </div>
+        <ul>
+          <li>停车入库地址：<b>徐汇区苍梧路 12 号（B1–B2 停车场）</b></li>
+          <li>临时停车：<b>10 元 / 小时</b>，每日封顶 80 元</li>
+          <li>B1–B2 均设有<b>充电桩车位</b></li>
+        </ul>
+      </div>
+
+      <div class="guide-item">
+        <div class="g-head">
+          <div class="icon">📦</div>
+          <h4>快递签收<small>DELIVERY</small></h4>
+        </div>
+        <ul>
+          <li><b>顺丰、京东</b>可送货上门</li>
+          <li>其他快递统一放置于 <b>大楼 B1 中转梯电梯间快递架</b>，请当天前往领取</li>
+          <li>园区不提供快递代收、代寄及保管服务</li>
+        </ul>
+      </div>
+
+      <div class="guide-item">
+        <div class="g-head">
+          <div class="icon">🚚</div>
+          <h4>大件搬运与卸货区<small>UNLOADING</small></h4>
+        </div>
+        <ul>
+          <li>车高 <b>低于 2.2 米</b>：从<b>苍梧路 12 号</b>入口下 B1，直达 T1 最近货梯口</li>
+          <li>车高 <b>2.2 – 3.1 米</b>：从<b>苍梧路 10 号</b>口入，停 B1 卸货区（地库拖车步行约 113 步至货梯）</li>
+          <li class="warn">车高 <b>超过 3.1 米</b>：园区地面无车位，仅可临时借用消防疏散通道，须<b>提前 5 个工作日</b>向物业报备（车牌号及车辆照片、搬运日期、联系电话，经物业经理签字），且工作日<b>仅限 18:00 后</b>进入</li>
+          <li class="warn">物品搬进搬出须<b>至少提前 1 个工作日</b>报备物品明细，凭盖章单使用货梯；<b>当天不受理任何临时报备</b></li>
+          <li>搬运当天建议自备小拉车；大件木架包装建议让快递员带走，避免产生建筑垃圾清运费用</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="fname">Geek Nexus</div>
+    <div class="fsite">www.geeknexus.ai</div>
+    <div class="fcontact">
+      <div>hello@geeknexus.ai（公开咨询）</div>
+      <div>cecelia@geeknexus.ai（商务合作）</div>
+    </div>
+    <div class="fnote">For Enterprise · For Developers — Enterprise AI at the Edge</div>
+  </footer>
+
+</div>
+</body>
+</html>
