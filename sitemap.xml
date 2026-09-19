@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.geeknexus.ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/" />
+  </url>
+  <url>
+    <loc>https://www.geeknexus.ai/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/" />
+  </url>
+  <url>
+    <loc>https://www.geeknexus.ai/company/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/company/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/company/" />
+  </url>
+  <url>
+    <loc>https://www.geeknexus.ai/zh/company/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/company/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/company/" />
+  </url>
+  <url>
+    <loc>https://www.geeknexus.ai/commercial/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/commercial/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/commercial/" />
+  </url>
+  <url>
+    <loc>https://www.geeknexus.ai/zh/commercial/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/commercial/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/commercial/" />
+  </url>
+</urlset>

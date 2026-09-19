@@ -42,6 +42,7 @@ button, a { touch-action:manipulation; -webkit-tap-highlight-color:transparent; 
 .brand-copy small { color: var(--subtle); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
 .nav-links { display: flex; align-items: center; gap: clamp(18px,2.3vw,34px); color: var(--muted); font-size: 13px; font-weight: 650; }
 .nav-links > a:not(.nav-cta) { position: relative; padding: 12px 0; transition: color .18s ease; }
+.locale-link { color: var(--ink); font-weight: 760; white-space: nowrap; }
 .nav-links > a:not(.nav-cta):hover, .nav-links > a.active { color: var(--blue); }
 .nav-links > a.active::after { content: ""; position: absolute; right: 0; bottom: 4px; left: 0; height: 2px; border-radius: 2px; background: var(--blue); }
 .nav-links > a:not(.nav-cta):not(.active)::after { content: ""; position: absolute; right: 0; bottom: 4px; left: 0; height: 2px; border-radius: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; transition: transform .22s ease; }
