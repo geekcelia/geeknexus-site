@@ -9,7 +9,7 @@
   // 演示模式兜底数据（假数据，仅本地预览用；真实内容存后端 KV，不进前端源码）
   const SEED = {
     title: "游戏云 WLB 求职信息榜（演示）",
-    price: 10,
+    price: 500,
     updatedAt: "2026-09-17",
     items: [
       { id: "demo-1", type: "referral", company: "示例公司 A", role: "服务端开发", location: "上海", code: "DEMO-AAAA1111", link: "", note: "演示数据：部署后端后此处显示真实内容。", status: "active" },

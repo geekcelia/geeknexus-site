@@ -383,7 +383,7 @@ function premiumMeta(data) {
 }
 
 async function getPremiumContent(env) {
-  return (await env.JOBS_KV.get(PREMIUM_KEY, "json")) || { title: "", price: 10, currency: "CNY", updatedAt: "", items: [] };
+  return (await env.JOBS_KV.get(PREMIUM_KEY, "json")) || { title: "", price: 500, currency: "CNY", updatedAt: "", items: [] };
 }
 
 async function handleGetPremium(env, request) {
