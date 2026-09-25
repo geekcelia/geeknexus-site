@@ -1,4 +1,4 @@
-const CACHE_NAME = "geek-nexus-shell-v20";
+const CACHE_NAME = "geek-nexus-shell-v21";
 const APP_SHELL = [
   "/",
   "/company/",
