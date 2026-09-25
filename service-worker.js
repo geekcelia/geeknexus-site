@@ -1,4 +1,4 @@
-const CACHE_NAME = "geek-nexus-shell-v16";
+const CACHE_NAME = "geek-nexus-shell-v17";
 const APP_SHELL = [
   "/",
   "/company/",
@@ -7,6 +7,11 @@ const APP_SHELL = [
   "/zh/company/",
   "/zh/commercial/",
   "/styles.css?v=23",
+  "/styles.css?v=process-2",
+  "/assets/process-discover.svg",
+  "/assets/process-pilot.svg",
+  "/assets/process-prove.svg",
+  "/assets/process-scale.svg",
   "/founder-profile.css?v=1",
   "/assets/celia-shu-portrait.jpg",
   "/company/company.css?v=21",
