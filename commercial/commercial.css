@@ -64,21 +64,10 @@
 .diagnosis-step .step-top b { color:#087b8f; background:#eaf8fb; }
 .project-step .step-top b { color:#237b3b; background:var(--surface-green); }
 
-/* Step visuals */
-.step-visual { position:relative; height:140px; margin:24px 0; display:grid; place-items:center; align-content:center; gap:2px; overflow:hidden; border:1px solid var(--line); border-radius:18px; }
-.clock-visual { color:var(--blue); border-color:#bed4f2; background:linear-gradient(145deg,#f2f7ff,#eaf2fe); box-shadow:inset 0 0 0 1px rgba(26,115,232,.05); }
-.clock-visual strong { font-size:44px; line-height:1; }
-.clock-visual small { font-size:9px; font-weight:800; letter-spacing:.16em; }
-.scan-visual { color:var(--cyan); border-color:#b5dfe6; background:linear-gradient(145deg,#f0fbfc,#e6f7f9); }
-.scan-visual i { position:absolute; width:24px; height:24px; border-color:var(--cyan); border-style:solid; }
-.scan-visual i:first-child { top:18px; left:18px; border-width:2px 0 0 2px; }
-.scan-visual i:nth-child(2) { right:18px; bottom:18px; border-width:0 2px 2px 0; }
-.scan-visual i:nth-child(3) { width:70px; height:2px; background:var(--cyan); border:0; opacity:.45; }
-.scan-visual strong { font-size:18px; position:relative; z-index:1; }
-.contract-visual { color:var(--green); border-color:#b9ddc6; background:linear-gradient(145deg,#f0faf4,#e8f6ee); }
-.contract-visual i { width:62px; height:5px; border-radius:5px; background:#d9e9df; }
-.contract-visual i:nth-child(2) { width:44px; }
-.contract-visual strong { position:absolute; right:17px; bottom:16px; width:30px; height:30px; display:grid; place-items:center; border-radius:50%; color:#fff; background:var(--green); font-size:15px; }
+/* Scoped illustration frame; avoid inheriting homepage step-image dimensions. */
+.engagement-visual { width:100%; aspect-ratio:12/7; margin:24px 0; }
+.engagement-visual img { display:block; width:100%; height:auto; }
+
 
 .engagement-step h3 { margin:0 0 18px; font-size:clamp(26px,2.6vw,38px); line-height:1.05; letter-spacing:-.04em; }
 .engagement-step > p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
@@ -162,7 +151,7 @@
   .commercial-section { padding:46px max(18px,env(safe-area-inset-right)) 46px max(18px,env(safe-area-inset-left)); }
   .commercial-heading { gap:18px; margin-bottom:28px; }
   .engagement-step { padding:22px; border-radius:19px; }
-  .step-visual { height:120px; }
+
   .ecosystem-section { padding-top:18px; }
   .ecosystem-grid article { min-height:0; padding:30px 24px; border-radius:24px; }
   .ecosystem-grid h3 { margin-top:56px; }
