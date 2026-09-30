@@ -1,0 +1,16 @@
+// Public information only. Never place contracts, internal prices or passwords here.
+export const knowledge = [
+  {id:'services', keys:/服务|业务|介绍|能做|service|company|agentbox|hardware|模型|ai|人工智能/i, zh:'极客寰宇提供企业云服务咨询、边缘计算与 AI 应用部署。AgentBox 将硬件、云服务、模型和业务流程连接起来，适合从知识问答、客户服务或文档处理等具体场景开始。', en:'Geek Nexus supports enterprise cloud consulting, edge computing and AI deployment. AgentBox connects hardware, cloud, models and business workflows. Start with a focused use case such as knowledge assistance, customer service or document processing.', source:'/company/'},
+  {id:'cloud', keys:/云|aws|采购|购买|怎么买|cloud|buy|purchase|cdn/i, zh:'云服务咨询可以先提供：云厂商、部署地区、业务类型、预计月用量或预算，以及新购还是迁移。我们会据此确认可提供的方案和商务条件；尚未确认的产品、授权和折扣不会直接承诺。', en:'For cloud consulting, share your preferred provider, deployment region, workload, estimated monthly usage or budget, and whether this is a new purchase or migration. Availability and commercial terms require confirmation.', source:'/commercial/'},
+  {id:'price', keys:/折|价格|报价|多少钱|优惠|佣金|discount|price|pricing|cost|quote/i, zh:'当前没有可直接承诺的统一公开折扣。报价需结合产品、地区、用量、付款方式和合同条件确认。请告诉我们云厂商及预计月用量或预算，通过下方「整理咨询需求」发送给团队。', en:'There is no confirmed public blanket discount. Pricing depends on product, region, usage, payment and contract terms. Share your provider and estimated monthly usage or budget using “Prepare an inquiry” below.', source:'/commercial/'},
+  {id:'visit', keys:/地址|哪里|在哪|到访|办公|address|location|office|visit/i, zh:'官网访客指南列出的上海办公点为：徐汇区鑫耀中城 T1 栋 18 楼 1807C。请先联系确认接待时间。香港公司注册地址与实际接待地点不同，不建议未预约直接前往注册地址。', en:'The website lists the Shanghai office at Room 1807C, Floor 18, Tower T1, Xinyao Midtown, Xuhui District. Please confirm your visit in advance. The Hong Kong registered address is separate from the reception location.', source:'/office/'},
+  {id:'hours', keys:/几点|开门|营业|周末|时间|hours|open|weekend|schedule/i, zh:'目前未公布固定接待时间。请通过电话 +86 16602146315 或 hello@geeknexus.ai 预约，由团队确认时间后到访。', en:'Fixed reception hours have not been published. Please arrange a visit via +86 16602146315 or hello@geeknexus.ai and wait for confirmation.', source:'/office/'},
+  {id:'wifi', keys:/wi[ -]?fi|密码|无线|password/i, zh:'访客 Wi-Fi 信息请到访后向现场联系人获取。公开助手不提供内部网络密码或其他账户凭证。', en:'Please ask your on-site contact for guest Wi-Fi access. Internal network passwords and account credentials are not shared through this public assistant.', source:'/office/'},
+  {id:'contact', keys:/联系|咨询|电话|邮箱|人工|预约|contact|email|phone|human|book/i, zh:'欢迎联系极客寰宇：电话 +86 16602146315；邮箱 hello@geeknexus.ai。可以通过「整理咨询需求」准备邮件草稿，发送前由你检查确认。', en:'Contact Geek Nexus at +86 16602146315 or hello@geeknexus.ai. Use “Prepare an inquiry” to create an email draft for you to review and send.', source:'/company/'},
+  {id:'wechat', keys:/公众号|关注|礼|wechat|gift|follow/i, zh:'点击右侧「关注公众号有礼」，使用微信扫描 Geekcelia 公众号二维码。具体活动与赠品请以公众号实际发布的信息为准。', en:'Choose “Follow on WeChat” and scan the Geekcelia QR code in WeChat. Refer to the official account for any current gift or promotion details.', source:null}
+];
+export function lookup(question, lang='zh') {
+  // Sensitive and commercial topics take precedence over generic company keywords.
+  const order=['wifi','price','hours','visit','wechat','contact','cloud','services'];
+  return order.map(id=>knowledge.find(item=>item.id===id)).filter(item=>item.keys.test(question)).slice(0,3).map(item=>({text:item[lang],source:item.source}));
+}
