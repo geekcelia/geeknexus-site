@@ -12,13 +12,13 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/assets/icon-192.png",
+      "src": "/assets/icon-192-white-v2.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/geek-nexus-logo-mark.png",
+      "src": "/assets/icon-512-white-v2.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
