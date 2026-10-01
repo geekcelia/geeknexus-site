@@ -1,0 +1,36 @@
+/* Opt-in only. Default homepage layout and type remain unchanged. */
+.gn-reading-toggle{position:fixed;left:max(12px,env(safe-area-inset-left));bottom:max(16px,env(safe-area-inset-bottom));z-index:40;min-height:48px;padding:10px 18px;border:1px solid #c9d2df;border-radius:24px;background:#fff;color:#155cbc;box-shadow:0 5px 20px #20344918;font:600 16px/1.4 system-ui;cursor:pointer}
+.gn-reading-toggle:focus-visible{outline:3px solid #155cbc;outline-offset:3px}
+.gn-reading-toggle[aria-pressed=true]{background:#155cbc;color:white}
+.gn-reading-status{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+html.gn-large-text{font-size:20px;scroll-behavior:auto}
+.gn-large-text body{font-size:20px;line-height:1.75;padding-bottom:88px}
+.gn-large-text :is(p,li,td,th,blockquote,label,summary,input,textarea,select,button,a){font-size:20px!important;line-height:1.7!important;overflow-wrap:anywhere}
+.gn-large-text :is(small,.section-index,.eyebrow,.gn-status,.gn-compose small){font-size:18px!important;line-height:1.65!important;letter-spacing:normal!important}
+.gn-large-text :is(h1,h2,h3,h4){line-height:1.25!important;overflow-wrap:anywhere}
+.gn-large-text :is(dt,dd){font-size:20px!important;line-height:1.7!important;overflow-wrap:anywhere}
+.gn-large-text :is(.credibility-evidence,.bento,.proof-strip,.mobile-architecture,.company-page) strong{font-size:max(1em,20px);line-height:1.5}
+.gn-large-text h1{font-size:clamp(40px,6vw,90px)}
+.gn-large-text :is(.nav,.nav-links,.footer,.footer-links,.fit-line,.card-top){flex-wrap:wrap;gap:16px}
+.gn-large-text .nav{position:relative;height:auto}
+.gn-large-text :is(button,input,select,.button,.nav-cta){min-height:48px;max-width:100%;white-space:normal}
+.gn-large-text :is(.hero,.credibility,.section-heading,.split-heading){grid-template-columns:minmax(0,1fr)}
+.gn-large-text .agent-visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding:20px;min-height:0}
+.gn-large-text .agent-visual :is(.orbit,.visual-grid,.hero-links){display:none}
+.gn-large-text .agent-visual :is(.system-card,.visual-caption){position:static;width:auto;transform:none;text-align:left}
+.gn-large-text .system-core{grid-column:1/-1}
+.gn-large-text :is(.node,.system-core,.visual-caption) :is(strong,span,small){font-size:20px;line-height:1.6;letter-spacing:normal}
+.gn-large-text .node span{margin-bottom:10px}
+.gn-large-text .architecture-visual{display:none}
+.gn-large-text .mobile-architecture{display:grid!important}
+.gn-large-text :is(.proof-strip,.bento-grid,.steps,.scenario-grid,.updates-grid,.credibility-evidence){grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.gn-large-text .gn-dialog{width:520px;font-size:20px;height:min(850px,calc(100dvh - 24px))}
+.gn-large-text .gn-rail button{font-size:16px!important;line-height:1.4!important;min-height:66px}
+.gn-large-text .gn-head h2{font-size:22px}.gn-large-text .gn-head p{font-size:18px!important}
+.gn-large-text .gn-reading-toggle{font-size:18px!important}
+.gn-large-text :is(.field,.premium-hero-copy,.premium-hero,.unlock-card,.module-body){min-width:0}
+.gn-large-text :is(.field input,.field textarea){width:100%;min-width:0;box-sizing:border-box}
+.gn-large-text :is(.strengths,.premium-grid){grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.gn-large-text .course-map{flex-wrap:wrap}
+@media(max-width:700px){.gn-large-text :is(.premium-hero,.unlock-card,.jobs-form,.salary-row,.premium-stats){grid-template-columns:minmax(0,1fr)}.gn-large-text .premium-hero h1{font-size:40px}}
+@media(max-width:700px){.gn-large-text .agent-visual{grid-template-columns:minmax(0,1fr)}.gn-large-text .gn-dialog{width:auto}.gn-large-text .gn-rail button{font-size:14px!important}.gn-large-text .gn-head{padding:12px;gap:8px}.gn-large-text .gn-head p{display:none}.gn-large-text .gn-compose{padding:10px}.gn-large-text .gn-compose small{font-size:16px!important}.gn-large-text .gn-body{padding:16px}}
