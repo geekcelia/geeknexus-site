@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>AI 接入 · 公开资料与使用说明 | Geek Nexus</title>
+  <meta name="description" content="让 AI 助手准确了解 Geek Nexus 与 AgentBox。查看来源可追溯的公开资料、JSON、Markdown 和使用边界。当前为静态只读入口，无实时 MCP 服务。">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Geek Nexus · AI 接入">
+  <meta property="og:description" content="企业资料，清晰可读。公开事实，来源可查。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.geeknexus.ai/ai/">
+  <meta property="og:image" content="https://www.geeknexus.ai/assets/og-light.png">
+  <link rel="canonical" href="https://www.geeknexus.ai/ai/">
+  <link rel="alternate" type="text/markdown" href="https://www.geeknexus.ai/ai/public-info.md" title="AI-readable public information">
+  <link rel="alternate" type="application/json" href="https://www.geeknexus.ai/ai/public-info.json" title="Structured public information">
+  <link rel="describedby" href="https://www.geeknexus.ai/llms.txt" type="text/plain">
+  <link rel="icon" type="image/png" href="/assets/geek-nexus-logo-mark.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon-white-v2.png">
+  <link rel="stylesheet" href="/styles.css?v=scenes-1">
+  <link rel="stylesheet" href="/ai/ai.css?v=1">
+  <script src="/ai/ai.js?v=1" defer></script>
+  <script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body class="ai-page">
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="nav ai-nav">
+    <a class="brand" href="/" aria-label="Geek Nexus 首页"><span class="brand-mark-wrap"><img class="brand-mark" src="/assets/geek-nexus-logo-mark.png" alt=""></span><span class="brand-copy"><strong>Geek Nexus</strong><small>Technology Limited</small></span></a>
+    <nav aria-label="主导航"><a href="/zh/">官网</a><a href="#facts">公开资料</a><a href="#connect">使用说明</a><a class="current" href="/ai/" aria-current="page">AI 接入</a></nav>
+  </header>
+  <main id="main">
+    <section class="ai-hero" aria-labelledby="page-title">
+      <div class="ai-hero-copy">
+        <p class="eyebrow"><span></span>FOR PEOPLE &amp; AI AGENTS</p>
+        <h1 id="page-title">让 AI 准确了解<br><em>Geek Nexus。</em></h1>
+        <p class="ai-intro">把公司、AgentBox 与合作方式整理成可读取、可引用的公开资料。让第一次了解更清楚，让下一次沟通更具体。</p>
+        <div class="ai-actions"><a class="button primary" href="#connect">交给你的 AI 助手 <span aria-hidden="true">↗</span></a><a class="button secondary" href="/ai/public-info.md">阅读公开资料</a></div>
+        <p class="review-date">内容核验 {{reviewed_at}} <span>·</span> 不代表实时状态</p>
+      </div>
+      <aside class="document-panel" aria-label="当前接入能力">
+        <div class="panel-top"><span>GEEK NEXUS / PUBLIC INFORMATION</span><span class="readonly-tag">静态 · 只读</span></div>
+        <div class="document-icon" aria-hidden="true"><span>{</span><i></i><i></i><i></i><span>}</span></div>
+        <h2>一份资料，<br>多种读取方式。</h2>
+        <div class="format-links"><a href="/ai/public-info.md">Markdown <span>↗</span></a><a href="/ai/public-info.json">JSON <span>↗</span></a><a href="/llms.txt">llms.txt <span>↗</span></a></div>
+        <p>来源可追溯 · 边界说清楚 · 未知不补写</p>
+        <div class="availability-note"><strong>MCP 服务尚未开放</strong><span>当前入口不提供自动预约、报价或付款工具。</span></div>
+      </aside>
+    </section>
+    <section class="connect-section" id="connect" aria-labelledby="connect-title">
+      <div class="section-heading"><div><p class="section-index">01 / GET STARTED</p><h2 id="connect-title">把这个入口交给你的助手。</h2></div><p>适用于支持网页读取的 AI 助手。客户端是否能访问外部链接，以实际能力为准。</p></div>
+      <div class="connect-grid">
+        <div class="prompt-card"><div class="prompt-heading"><label for="agent-prompt">复制后粘贴到 AI 对话</label><button type="button" id="copy-prompt" hidden>复制说明</button></div><textarea id="agent-prompt" rows="7" readonly spellcheck="false">{{prompt}}</textarea><p class="copy-status" id="copy-status" role="status" aria-live="polite">也可以选中文本，手动复制。</p></div>
+        <ol class="reading-steps"><li><span>01</span><div><h3>读取公开资料</h3><p>打开 <a href="/ai/public-info.md">Markdown</a>；需要固定字段时读取 <a href="/ai/public-info.json">JSON</a>。无需安装脚本或填写密钥。</p></div></li><li><span>02</span><div><h3>带着来源回答</h3><p>区分公开描述、项目待确认事项与未知信息，并保留来源和核验日期。</p></div></li><li><span>03</span><div><h3>确认后再联系</h3><p>先整理一个具体流程。邮件由你确认后再发送，时间安排以团队回复为准。</p></div></li></ol>
+      </div>
+      <p class="protocol-note">网页与 JSON 是资料；llms.txt 是读取目录的社区约定；Skill 是助手的使用说明包；MCP 是工具调用协议。本阶段只开放静态资料，不提供可安装 Skill 包或 MCP 连接地址，也不保证任何平台自动发现或推荐本站。</p>
+    </section>
+    <section class="facts-section" id="facts" aria-labelledby="facts-title"><div class="section-heading"><div><p class="section-index">02 / PUBLIC FACTS</p><h2 id="facts-title">了解我们，从可核对的信息开始。</h2></div><p>以下内容根据官网整理。每项保留出处；具体交付与商务事项按项目确认。</p></div><div class="facts-grid">{{cards}}</div></section>
+    <section class="faq-section" id="faq" aria-labelledby="faq-title"><div class="section-heading"><div><p class="section-index">03 / QUESTIONS &amp; BOUNDARIES</p><h2 id="faq-title">能回答什么，哪些需要确认。</h2></div><p>先对齐问题和边界，不把公开介绍当作项目承诺。</p></div><div class="faq-list">{{faq}}</div></section>
+    <section class="rules-section" aria-labelledby="rules-title"><p class="section-index">04 / RESPONSIBLE USE</p><h2 id="rules-title">保持信息准确，也尊重授权。</h2><ul>{{rules}}</ul></section>
+    <section class="ai-contact" aria-labelledby="contact-title"><div><p class="section-index">START WITH ONE WORKFLOW</p><h2 id="contact-title">带一个具体问题，开始沟通。</h2><p>15 分钟免费初步沟通。深度诊断与项目实施另行约定。</p></div><a class="button primary" href="mailto:hello@geeknexus.ai?subject=AgentBox%20%E5%88%9D%E6%AD%A5%E5%92%A8%E8%AF%A2">联系团队 <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="ai-footer"><div><strong>Geek Nexus Technology Limited</strong><p>Enterprise AI agents, packaged for the edge.</p></div><nav aria-label="页脚导航"><a href="/zh/">官网</a><a href="/zh/company/">关于公司</a><a href="/zh/commercial/">合作模式</a><a href="/office/">到访指南</a><a href="/ai/public-info.json">JSON 资料</a></nav><p>Shanghai · © 2026 Geek Nexus</p></footer>
+</body>
+</html>

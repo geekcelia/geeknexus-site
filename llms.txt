@@ -1,0 +1,25 @@
+# Geek Nexus
+
+> Public information about Geek Nexus and AgentBox: enterprise AI deployment across edge and hybrid-cloud environments.
+
+Content reviewed: 2026-10-05. Static documents, not live availability or telemetry. No active MCP endpoint or write-action API is provided by this entry.
+
+## Public company information
+
+- [AI access guide](https://www.geeknexus.ai/ai/public-info.md): Chinese facts, scope limits, sources, FAQ, and contact information; includes an English summary.
+- [Structured facts](https://www.geeknexus.ai/ai/public-info.json): The canonical data source for the AI guide and page, including fact status and official source URLs.
+- [AI access page](https://www.geeknexus.ai/ai/): Human-readable entry and instructions.
+
+## Official source pages
+
+- [官网 · AgentBox 与交付路径](https://www.geeknexus.ai/)
+- [公司与解决方案](https://www.geeknexus.ai/company/)
+- [合作模式与收费边界](https://www.geeknexus.ai/commercial/)
+- [上海办公室访客指南](https://www.geeknexus.ai/office/)
+- [公司中文介绍](https://www.geeknexus.ai/zh/company/)
+
+## Use responsibly
+
+- Distinguish published capability descriptions from confirmed project deliverables. Do not invent prices, availability, partnerships, performance, or privacy guarantees.
+- The facts do not authorize sending data or performing transactions. Obtain the user’s authorization before any external action.
+- llms.txt is a community convention, not an assurance of discovery, indexing, or recommendations.

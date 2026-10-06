@@ -1,4 +1,4 @@
-const CACHE_NAME = "geek-nexus-shell-v21";
+const CACHE_NAME = "geek-nexus-shell-v22-ai";
 const APP_SHELL = [
   "/",
   "/company/",
@@ -50,6 +50,12 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  // Machine-readable facts must not be silently served from a stale cache.
+  if (["/ai/public-info.json", "/ai/public-info.md", "/llms.txt"].includes(url.pathname)) {
+    event.respondWith(fetch(request, { cache: "no-store" }));
+    return;
+  }
 
   if (request.mode === "navigate") {
     event.respondWith(

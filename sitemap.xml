@@ -30,4 +30,8 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/commercial/" />
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/zh/commercial/" />
   </url>
+  <url>
+    <loc>https://www.geeknexus.ai/ai/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
 </urlset>
