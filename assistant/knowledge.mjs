@@ -7,7 +7,7 @@ export const knowledge = [
   {id:'hours', keys:/几点|开门|营业|周末|时间|hours|open|weekend|schedule/i, zh:'目前未公布固定接待时间。请通过电话 +86 16602146315 或 hello@geeknexus.ai 预约，由团队确认时间后到访。', en:'Fixed reception hours have not been published. Please arrange a visit via +86 16602146315 or hello@geeknexus.ai and wait for confirmation.', source:'/office/'},
   {id:'wifi', keys:/wi[ -]?fi|密码|无线|password/i, zh:'访客 Wi-Fi 信息请到访后向现场联系人获取。公开助手不提供内部网络密码或其他账户凭证。', en:'Please ask your on-site contact for guest Wi-Fi access. Internal network passwords and account credentials are not shared through this public assistant.', source:'/office/'},
   {id:'contact', keys:/联系|咨询|电话|邮箱|人工|预约|contact|email|phone|human|book/i, zh:'欢迎联系极客寰宇：电话 +86 16602146315；邮箱 hello@geeknexus.ai。可以通过「整理咨询需求」准备邮件草稿，发送前由你检查确认。', en:'Contact Geek Nexus at +86 16602146315 or hello@geeknexus.ai. Use “Prepare an inquiry” to create an email draft for you to review and send.', source:'/company/'},
-  {id:'wechat', keys:/公众号|关注|礼|wechat|gift|follow/i, zh:'点击右侧「关注公众号有礼」，使用微信扫描 Geekcelia 公众号二维码。具体活动与赠品请以公众号实际发布的信息为准。', en:'Choose “Follow on WeChat” and scan the Geekcelia QR code in WeChat. Refer to the official account for any current gift or promotion details.', source:null}
+  {id:'wechat', keys:/小红书|xiaohongshu|rednote|公众号|关注|礼|wechat|gift|follow/i, zh:'点击「关注有礼」，可选择微信公众号或小红书。小红书账号为 Geekcelia | Geek Nexus，小红书号 63094633246，可扫码或搜索关注。活动及赠品以对应账号实际发布的信息为准。', en:'Choose “Follow us” for WeChat or Xiaohongshu. Search Xiaohongshu for Geekcelia | Geek Nexus, ID 63094633246, or scan the profile card. Promotion details depend on each account.', source:null}
 ];
 export function lookup(question, lang='zh') {
   // Sensitive and commercial topics take precedence over generic company keywords.

@@ -1,4 +1,5 @@
 /* Layers: site navigation 20; service rail 40; assistant dialog top layer. */
+.gn-dialog[data-view=wechat] button[aria-pressed=true]{background:#155cbc;color:#fff;border-color:#155cbc}.gn-dialog[data-view=wechat] h4{font-size:18px;margin:24px 0 12px}.gn-dialog[data-view=wechat] .gn-actions a{text-decoration:none;display:inline-flex;align-items:center}
 .gn-feedback-delivery{margin-top:20px}.gn-feedback-delivery .gn-actions{gap:12px}.gn-feedback-delivery .gn-actions a{text-decoration:none;display:inline-flex;align-items:center}.gn-feedback-delivery textarea[readonly]{min-height:200px}
 .gn-body{font-size:16px}.gn-body .gn-status{font-size:14px}.gn-rating{min-width:0}.gn-rating input{z-index:1}.gn-rating label{min-height:48px}.gn-service-row span:not(.gn-row-arrow){overflow-wrap:anywhere}
 .gn-dialog{box-sizing:border-box}.gn-dialog *{box-sizing:border-box}
