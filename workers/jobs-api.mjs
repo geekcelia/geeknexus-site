@@ -18,16 +18,19 @@
  *   POST /jobs/intents              — multipart: intent fields + resume file
  *   GET  /jobs/premium/content      — paid content, masked preview when locked
  *   POST /jobs/premium/unlock       — {code} → full paid content
- *   GET  /jobs/admin/pending?key=   — admin: pending queue
- *   POST /jobs/admin/moderate?key=  — admin: {type,id,action:approve|reject}
- *   GET  /jobs/admin/resume/:id?key — admin: download resume from R2
- *   GET  /jobs/admin/premium?key=   — admin: full premium content + codes
- *   POST /jobs/admin/premium?key=   — admin: replace premium content {items,...}
- *   POST /jobs/admin/unlock?key=    — admin: generate unlock codes {count,note}
+ *   All admin endpoints require the x-admin-key request header, never a URL key.
+ *   GET  /jobs/admin/pending       — admin: pending queue
+ *   POST /jobs/admin/moderate      — admin: {type,id,action:approve|reject}
+ *   GET  /jobs/admin/resume/:id     — admin: download resume from R2/KV
+ *   GET  /jobs/admin/premium       — admin: full premium content + codes
+ *   POST /jobs/admin/premium       — admin: replace premium content {items,...}
+ *   POST /jobs/admin/unlock        — admin: generate unlock codes {count,note}
  *   POST /jobs/admin/unlock-revoke  — admin: revoke an unlock code {code}
  */
 
 const MAX_RESUME_BYTES = 10 * 1024 * 1024; // 10MB
+const MAX_JSON_BYTES = 64 * 1024;
+const MAX_MULTIPART_BYTES = MAX_RESUME_BYTES + 64 * 1024;
 const ALLOWED_RESUME_TYPES = new Set([
   "application/pdf",
   "application/msword",
@@ -39,7 +42,13 @@ const ALLOWED_ORIGINS = new Set([
 ]);
 const RATE_LIMIT_PER_HOUR = 30;
 
-const JSON_HEADERS = { "content-type": "application/json; charset=utf-8" };
+const PRIVATE_HEADERS = {
+  "cache-control": "private, no-store",
+  "pragma": "no-cache",
+  "x-content-type-options": "nosniff",
+  "referrer-policy": "no-referrer",
+};
+const JSON_HEADERS = { "content-type": "application/json; charset=utf-8", ...PRIVATE_HEADERS };
 
 function corsHeaders(request) {
   const origin = request.headers.get("origin") || "";
@@ -50,7 +59,7 @@ function corsHeaders(request) {
   return {
     "access-control-allow-origin": allow,
     "access-control-allow-methods": "GET,POST,OPTIONS",
-    "access-control-allow-headers": "content-type",
+    "access-control-allow-headers": "content-type,x-admin-key",
     "access-control-max-age": "86400",
     vary: "origin",
   };
@@ -72,7 +81,8 @@ function safeEqual(a, b) {
 
 function isAdmin(request, env) {
   const url = new URL(request.url);
-  const key = url.searchParams.get("key") || request.headers.get("x-admin-key") || "";
+  if (url.searchParams.has("key")) return false;
+  const key = request.headers.get("x-admin-key") || "";
   const expected = (env && env.JOBS_ADMIN_KEY) || "";
   return expected && key && safeEqual(key, expected);
 }
@@ -173,10 +183,55 @@ async function listByPrefix(env, prefix) {
 
 async function rateLimit(env, request) {
   const ip = request.headers.get("cf-connecting-ip") || "unknown";
-  const bucket = `rl:${ip}:${new Date().toISOString().slice(0, 13)}`;
-  const n = parseInt((await env.JOBS_KV.get(bucket)) || "0", 10) + 1;
-  await env.JOBS_KV.put(bucket, String(n), { expirationTtl: 3600 });
-  return n <= RATE_LIMIT_PER_HOUR;
+  if (!env.JOBS_RATE_LIMITER) throw new Error("rate limiter unavailable");
+  const stub = env.JOBS_RATE_LIMITER.get(env.JOBS_RATE_LIMITER.idFromName(ip));
+  const response = await stub.fetch("https://jobs-rate.internal/allow", { method: "POST" });
+  if (response.status === 204) return true;
+  if (response.status === 429) return false;
+  throw new Error("rate limiter unavailable");
+}
+
+// This class is reachable only through the Worker's private Durable Object binding.
+// Its strongly consistent transaction issues a distinct allowance to each request.
+export class JobsRateLimiter {
+  constructor(state) { this.state = state; }
+  async fetch(request) {
+    if (request.method !== "POST") return new Response(null, { status: 405 });
+    const hour = Math.floor(Date.now() / 3600000);
+    const allowed = await this.state.storage.transaction(async (txn) => {
+      const bucket = await txn.get("bucket");
+      const count = bucket?.hour === hour ? bucket.count : 0;
+      if (count >= RATE_LIMIT_PER_HOUR) return false;
+      await txn.put("bucket", { hour, count: count + 1 });
+      return true;
+    });
+    return new Response(null, { status: allowed ? 204 : 429 });
+  }
+}
+
+async function boundedRequest(request, maxBytes) {
+  const declared = request.headers.get("content-length");
+  if (declared && /^\d+$/.test(declared) && Number(declared) > maxBytes) {
+    if (request.body) await request.body.cancel();
+    return null;
+  }
+  if (!request.body) return request;
+  const reader = request.body.getReader();
+  const chunks = [];
+  let total = 0;
+  try {
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      total += value.byteLength;
+      if (total > maxBytes) { await reader.cancel(); return null; }
+      chunks.push(value);
+    }
+  } finally { reader.releaseLock(); }
+  const bytes = new Uint8Array(total);
+  let offset = 0;
+  for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+  return new Request(request, { body: bytes });
 }
 
 // ---------- resume storage (R2 优先，KV 兜底) ----------
@@ -250,6 +305,13 @@ async function handlePostIntents(env, request) {
     return json(request, { ok: false, error: "invalid form data" }, 400);
   }
 
+  const allowedFields = new Set(["role", "location", "salary", "companyType", "note", "contact", "contactPublic", "resume", "agree"]);
+  for (const key of form.keys()) {
+    if (!allowedFields.has(key) || form.getAll(key).length !== 1) {
+      return json(request, { ok: false, error: "unexpected or duplicate form field" }, 400);
+    }
+  }
+
   const fields = {};
   for (const key of ["role", "location", "salary", "companyType", "note", "contact", "contactPublic"]) {
     fields[key] = form.get(key) ?? "";
@@ -302,7 +364,7 @@ async function handleAdminPending(env, request) {
   return json(request, {
     ok: true,
     referrals: refs,
-    intents: intents.map((i) => ({ ...i, resumeKey: i.resumeKey, resumeUrl: `./resume/${i.id}?key=${new URL(request.url).searchParams.get("key")}` })),
+    intents: intents.map((i) => ({ ...i, resumeUrl: `./resume/${i.id}` })),
   });
 }
 
@@ -344,6 +406,7 @@ async function handleAdminResume(env, request) {
       return new Response(obj.body, {
         headers: {
           ...corsHeaders(request),
+          ...PRIVATE_HEADERS,
           "content-type": obj.contentType || "application/octet-stream",
           "content-disposition": `attachment; filename="${encodeURIComponent(rec.resumeName || "resume")}"`,
         },
@@ -404,9 +467,12 @@ async function handlePremiumUnlock(env, request) {
   const rec = await env.JOBS_KV.get(`premium:unlock:${code}`, "json");
   if (!rec || rec.revoked) return json(request, { ok: false, error: "invalid code" }, 403);
 
-  rec.usedCount = (rec.usedCount || 0) + 1;
-  rec.lastUsedAt = nowIso();
-  await env.JOBS_KV.put(`premium:unlock:${code}`, JSON.stringify(rec));
+  // Only administrators write authorization state; usage accounting cannot undo revocation.
+  const usageKey = `premium:usage:${code}`;
+  const usage = (await env.JOBS_KV.get(usageKey, "json")) || { usedCount: rec.usedCount || 0 };
+  usage.usedCount = (usage.usedCount || 0) + 1;
+  usage.lastUsedAt = nowIso();
+  await env.JOBS_KV.put(usageKey, JSON.stringify(usage));
 
   const data = await getPremiumContent(env);
   return json(request, { ok: true, locked: false, meta: premiumMeta(data), items: data.items || [] });
@@ -417,7 +483,11 @@ async function handleAdminPremiumGet(env, request) {
   const codes = (await listByPrefix(env, "premium:unlock:")).sort((a, b) =>
     (b.createdAt || "").localeCompare(a.createdAt || "")
   );
-  return json(request, { ok: true, content: data, unlockCodes: codes });
+  const withUsage = await Promise.all(codes.map(async (record) => {
+    const usage = await env.JOBS_KV.get(`premium:usage:${record.code}`, "json");
+    return usage ? { ...record, usedCount: usage.usedCount, lastUsedAt: usage.lastUsedAt } : record;
+  }));
+  return json(request, { ok: true, content: data, unlockCodes: withUsage });
 }
 
 async function handleAdminPremiumSet(env, request) {
@@ -463,7 +533,8 @@ async function handleAdminUnlockGen(env, request) {
   const note = text(body.note, 120);
   const codes = [];
   for (let i = 0; i < count; i++) {
-    const code = "WLB-" + crypto.randomUUID().replace(/-/g, "").slice(0, 8).toUpperCase();
+    const random = crypto.getRandomValues(new Uint8Array(16));
+    const code = "WLB-" + Array.from(random, (byte) => byte.toString(16).padStart(2, "0")).join("").toUpperCase();
     const rec = { code, note, usedCount: 0, createdAt: nowIso() };
     await env.JOBS_KV.put(`premium:unlock:${code}`, JSON.stringify(rec));
     codes.push(rec);
@@ -499,25 +570,35 @@ export default {
     }
 
     try {
+      // Authenticate before consuming an administrative request body.
+      if (path.startsWith("/jobs/admin/") && !isAdmin(request, env)) {
+        return json(request, { ok: false, error: "unauthorized" }, 401);
+      }
+      const publicPost = request.method === "POST" && ["/jobs/referrals", "/jobs/intents", "/jobs/premium/unlock"].includes(path);
+      if (publicPost && !(await rateLimit(env, request))) {
+        return json(request, { ok: false, error: "rate limited" }, 429);
+      }
+      if (request.method === "POST") {
+        const bounded = await boundedRequest(request, path === "/jobs/intents" ? MAX_MULTIPART_BYTES : MAX_JSON_BYTES);
+        if (!bounded) return json(request, { ok: false, error: "request too large" }, 413);
+        request = bounded;
+      }
       // health
       if (path === "/jobs/health") return json(request, { ok: true, service: "jobs-api" });
 
       // public
       if (path === "/jobs/referrals" && request.method === "GET") return handleGetReferrals(env, request);
       if (path === "/jobs/referrals" && request.method === "POST") {
-        if (!(await rateLimit(env, request))) return json(request, { ok: false, error: "rate limited" }, 429);
         return handlePostReferrals(env, request);
       }
       if (path === "/jobs/intents" && request.method === "GET") return handleGetIntents(env, request);
       if (path === "/jobs/intents" && request.method === "POST") {
-        if (!(await rateLimit(env, request))) return json(request, { ok: false, error: "rate limited" }, 429);
         return handlePostIntents(env, request);
       }
 
       // premium (paid content)
       if (path === "/jobs/premium/content" && request.method === "GET") return handleGetPremium(env, request);
       if (path === "/jobs/premium/unlock" && request.method === "POST") {
-        if (!(await rateLimit(env, request))) return json(request, { ok: false, error: "rate limited" }, 429);
         return handlePremiumUnlock(env, request);
       }
 
@@ -535,7 +616,7 @@ export default {
 
       return json(request, { ok: false, error: "not found" }, 404);
     } catch (err) {
-      return json(request, { ok: false, error: String(err && err.message || err) }, 500);
+      return json(request, { ok: false, error: "service unavailable" }, 503);
     }
   },
 };

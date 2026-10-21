@@ -4,6 +4,12 @@
   "main": "workers/jobs-api.mjs",
   "compatibility_date": "2026-08-25",
   "workers_dev": false,
+  "durable_objects": {
+    "bindings": [{ "name": "JOBS_RATE_LIMITER", "class_name": "JobsRateLimiter" }]
+  },
+  "migrations": [
+    { "tag": "jobs-rate-v1", "new_sqlite_classes": ["JobsRateLimiter"] }
+  ],
   "routes": [
     {
       "pattern": "api.geeknexus.ai/jobs*",
