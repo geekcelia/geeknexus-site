@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f7f8f5">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Geek Nexus 模型供应商报价台，查询模型折扣、输入、输出与缓存价格。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Token Price · 模型报价台 | Geek Nexus</title>
+  <link rel="icon" href="../assets/geek-nexus-logo-mark.png">
+  <link rel="stylesheet" href="./styles.css?v=1">
+  <script src="./app.js?v=1" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Geek Nexus 首页"><span class="brand-icon">g<span>n</span></span><span>Geek Nexus<small>TOOLS & INTELLIGENCE</small></span></a>
+    <div class="workspace-label">WORKSPACE <span>01</span></div>
+    <nav class="side-nav" aria-label="工作区">
+      <button class="nav-item active" data-view="quotes" type="button"><span class="nav-symbol">▦</span>报价查询<span class="nav-indicator"></span></button>
+      <button class="nav-item" data-view="sources" type="button"><span class="nav-symbol">▤</span>供应商与来源</button>
+      <button class="nav-item" data-view="guide" type="button"><span class="nav-symbol">?</span>价格怎么看</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="sidebar-note"><span class="mini-dot"></span> YOUR PRICE NOTEBOOK<p>每一条报价，<br>都有据可查。</p></div><a class="back-link" href="/">返回 Geek Nexus <span>↗</span></a><div class="version">TOKEN PRICE <span>V1.0</span></div></div>
+  </aside>
+
+  <div class="shell">
+    <header class="topbar"><div class="breadcrumb">工作区 <span>/</span> <strong id="breadcrumbTitle">报价查询</strong></div><div class="topbar-right"><span class="snapshot-label"><i></i> 报价快照</span><span class="avatar">GN</span></div></header>
+    <main>
+      <section id="quotesView" class="view">
+        <div class="page-heading"><div><p class="eyebrow">LESS SEARCHING. MORE CLARITY.</p><h1>模型报价台<span class="heading-dot">.</span></h1><p class="page-description">找到你要的模型，看清每一笔 Token 的价格。</p></div><div class="heading-actions"><button id="exportButton" class="button button-light" type="button"><span aria-hidden="true">↓</span> 导出结果</button><button id="openData" class="button button-dark" type="button"><span aria-hidden="true">＋</span> 导入报价</button></div></div>
+
+        <div class="overview"><div class="overview-intro"><span class="overview-mark">TP<span>↗</span></span><div><span class="overline">YOUR MODEL PRICE INDEX</span><p>价格清楚，选择有数。</p></div></div><div class="metric"><strong id="modelCount">—</strong><span>报价条目</span></div><div class="metric"><strong id="brandCount">—</strong><span>模型品牌</span></div><div class="metric"><strong id="supplierCount">—</strong><span>供应商</span></div><div class="import-summary"><span class="mini-dot"></span><span>最近导入<time id="importDate">—</time></span></div></div>
+
+        <div class="search-line"><label class="search-box" for="searchInput"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="searchInput" type="search" placeholder="搜索模型、供应商或计费条件…" autocomplete="off"><kbd>/</kbd></label><button id="favoriteOnly" class="favorite-filter" type="button" aria-pressed="false"><span aria-hidden="true">☆</span> 我的收藏</button></div>
+
+        <div class="quote-panel">
+          <div class="panel-top"><div id="categoryTabs" class="category-tabs" role="group" aria-label="模型类别"><button class="active" data-category="all" type="button">全部模型</button><button data-category="text" type="button">文本</button><button data-category="image" type="button">图像</button><button data-category="video" type="button">视频</button></div><span class="table-hint">单价按原币种展示</span></div>
+          <div id="familyTabs" class="family-tabs" role="group" aria-label="模型品牌"></div>
+          <div class="filters"><div class="filter-selects"><label>来源<select id="upstreamFilter" aria-label="筛选上游来源"><option value="">全部来源</option></select></label><label>渠道<select id="channelFilter" aria-label="筛选渠道"><option value="">全部渠道</option></select></label><label>币种<select id="currencyFilter" aria-label="筛选币种"><option value="">全部币种</option><option value="USD">USD 美元</option><option value="CNY">CNY 人民币</option></select></label><label class="price-mode-label">价格口径<select id="priceMode" aria-label="价格展示口径"><option value="final">折后试算</option><option value="base">表列原价</option></select></label></div><button id="clearFilters" class="text-button" type="button">重置筛选</button></div>
+          <div class="results-toolbar"><div><strong id="resultsCount" aria-live="polite">正在读取报价…</strong><label class="issue-filter"><input type="checkbox" id="issueOnly"> 仅看待确认</label></div><label class="sort-label">排序<select id="sortSelect" aria-label="报价排序"><option value="default">默认顺序</option><option value="input">输入价格从低到高</option><option value="output">输出价格从低到高</option><option value="cache">缓存价格从低到高</option><option value="discount">折扣从低到高</option><option value="name">模型名称</option></select></label></div>
+          <div class="notice"><span class="notice-icon">i</span><p>当前为供应商报价快照。折后价格按表列折扣试算；报价更新时间未提供，具体结算条件请与供应商核实。</p></div>
+          <div id="loadingState" class="state-message">正在整理价格，请稍候…</div>
+          <div id="errorState" class="state-message error-message" hidden>报价数据未能加载，请刷新页面重试。</div>
+          <div class="table-scroll"><table class="quotes-table"><thead><tr><th scope="col">模型 <span>MODEL</span></th><th scope="col">供应商 / 来源</th><th scope="col">适用条件</th><th scope="col">折扣</th><th scope="col">输入价格</th><th scope="col">输出价格</th><th scope="col">缓存价格</th><th scope="col">报价更新</th><th scope="col"><span class="sr-only">操作</span></th></tr></thead><tbody id="resultsBody"></tbody></table></div>
+          <div id="emptyState" class="state-message" hidden><strong>没有找到匹配的报价</strong><p>试试更短的模型名称，或重置筛选条件。</p></div>
+          <div class="panel-footer"><div><span class="source-bullet"></span> 数据来源 <strong id="sourceName">WeJoy</strong><span id="sourceMeta">Excel 报价文件</span></div><span>点击模型查看完整报价 ↗</span></div>
+        </div>
+        <div class="bottom-note"><p>同模型，不同渠道、上下文档位与计费单位，请分别比较。</p><span>GEEK NEXUS / TOKEN PRICE</span></div>
+      </section>
+
+      <section id="sourcesView" class="view" hidden><div class="page-heading"><div><p class="eyebrow">EVERY PRICE HAS A SOURCE.</p><h1>供应商与来源<span class="heading-dot">.</span></h1><p class="page-description">查看报价出处、导入时间和需要确认的信息。</p></div></div><div id="sourcesList" class="sources-list"></div><article class="info-block"><h2>后续报价如何更新？</h2><p>这一版使用 Excel 整理后的报价快照。新报价可通过约定的 JSON 格式导入：不同供应商追加保存，相同供应商更新报价，保存在当前浏览器。需要所有设备都看到更新时，更新站点数据文件并重新发布。</p><p>不会自动读取飞书，也不会把导入文件上传到外部服务。</p></article></section>
+
+      <section id="guideView" class="view" hidden><div class="page-heading"><div><p class="eyebrow">A LITTLE CONTEXT GOES A LONG WAY.</p><h1>价格怎么看<span class="heading-dot">.</span></h1><p class="page-description">先对齐计费条件，再比较价格。</p></div></div><div class="guide-grid"><article class="info-block"><span class="guide-number">01</span><h2>折扣与折后价格</h2><p>8 折表示按表列单价的 80% 试算。表列价格未独立核验为官方现价；折扣适用范围和最终结算以供应商确认为准。</p></article><article class="info-block"><span class="guide-number">02</span><h2>缓存不止一种价格</h2><p>缓存读取、短时写入和长时写入分别计价。主列表优先显示读取价，点击详情查看所有缓存价格。未提供不等于免费。</p></article><article class="info-block"><span class="guide-number">03</span><h2>按相同条件比较</h2><p>上下文长度、输入类型、分辨率、忙闲时段和模式都可能影响报价。不同币种、不同单位会分组排序，不直接混成一张最低价榜。</p></article><article class="info-block"><span class="guide-number">04</span><h2>报价新鲜度</h2><p>导入时间只表示系统何时收到这份文件。供应商没有给出更新时间时，报价时间会保留“未提供”，不会用文件日期替代。</p></article><article class="info-block"><span class="guide-number">05</span><h2>来源与渠道</h2><p>AWS 等上游平台与官 Key 号池等接入方式分别记录。供应商使用的“官方”等标签保留原文，不表示平台已核验或认证。</p></article><article class="info-block"><span class="guide-number">06</span><h2>跨表差异</h2><p>同一文件可能同时包含基础报价和对外售价。第一版以“模型报价”工作表为主，发现不同折扣时标记待确认，不自动选择其中一个。</p></article></div></section>
+    </main>
+  </div>
+
+  <div id="compareTray" class="compare-tray" hidden><div><span class="compare-tray-icon">▥</span><strong>已选 <span id="compareCount">0</span> 条报价</strong><span>最多同时比较 3 条</span></div><div><button id="compareClear" class="text-button" type="button">清空</button><button id="compareOpen" class="button button-dark" type="button">并排对比 ↗</button></div></div>
+  <dialog id="detailDialog" class="detail-dialog"><div class="dialog-top"><span class="eyebrow">QUOTE DETAILS</span><button id="detailClose" class="close-button" aria-label="关闭报价详情" type="button">×</button></div><div id="detailContent"></div></dialog>
+  <dialog id="compareDialog" class="compare-dialog"><div class="dialog-top"><h2>并排比较报价</h2><button id="compareClose" class="close-button" aria-label="关闭报价对比" type="button">×</button></div><div id="compareContent"></div></dialog>
+  <dialog id="dataDialog" class="data-dialog"><div class="dialog-top"><div><span class="eyebrow">YOUR PRICE DATA</span><h2>管理报价数据</h2></div><button id="closeData" class="close-button" aria-label="关闭数据管理" type="button">×</button></div><p class="dialog-description">初始报价来自你提供的 Excel。下载 JSON 可查看标准格式，后续按相同格式导入新供应商。</p><div class="import-area"><span class="upload-icon">↑</span><strong>导入标准报价 JSON</strong><p>最大 2 MB，合并后最多 1,000 条报价</p><label class="button button-dark file-button">选择文件<input id="importFile" type="file" accept="application/json,.json"></label></div><p class="local-note">不同供应商追加，相同供应商更新。仅保存在当前浏览器，不上传服务器。Excel 文件需要先整理成标准 JSON。</p><p id="importStatus" role="status" aria-live="polite"></p><div class="dialog-actions"><button id="downloadData" class="button button-light" type="button">下载当前 JSON</button><button id="resetData" class="text-button" type="button">恢复初始报价</button></div></dialog>
+  <noscript><p class="noscript">请启用 JavaScript 以查询和筛选报价。</p></noscript>
+</body>
+</html>
