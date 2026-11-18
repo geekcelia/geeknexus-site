@@ -34,4 +34,6 @@
     <loc>https://www.geeknexus.ai/ai/</loc>
     <lastmod>2026-10-05</lastmod>
   </url>
+  <url><loc>https://www.geeknexus.ai/goods/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/goods/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/en/goods/"/></url>
+  <url><loc>https://www.geeknexus.ai/en/goods/</loc><xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.geeknexus.ai/goods/"/><xhtml:link rel="alternate" hreflang="en" href="https://www.geeknexus.ai/en/goods/"/></url>
 </urlset>
