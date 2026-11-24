@@ -4,9 +4,9 @@ Static model supplier quote lookup at `/tokenprice/`. No build or external runti
 
 ## Data
 
-`data/quotes.json` contains the supplied WeJoy workbook's `模型报价` sheet only. It preserves original prices, currencies, units, conditional tiers, cache components and discounts separately. The initial 63 records have no supplier-provided update timestamp. Import time is not quote update time. Supplier/source labels are not independently verified.
+`data/quotes.json` is a multi-supplier snapshot built from the supplied workbooks. It preserves the WeJoy `模型报价` sheet's original prices, currencies, units, conditional tiers, cache components and discounts separately. 网宿边缘AI与界云的表只提供折扣方案，没有模型级输入、输出或缓存基础单价；这些条目明确显示为“仅折扣”，不会被伪造成结算单价。来源未提供的报价更新时间保持未知；导入时间不等于供应商报价更新时间。供应商及来源标签均未独立核验。
 
-The default price view multiplies each available base price by its supplied discount and labels the result as a calculation. Cross-sheet discount differences and incomplete units remain visible. Outbound selling prices from other sheets are not mixed with this source quote list.
+默认视图对有基础单价的条目按折扣试算，并清楚标示为计算结果；跨表折扣差异和单位不完整仍会展示。界云的金融智能体与金融数据工作表属于不同产品，不会混入 Token 报价。
 
 ## Features
 

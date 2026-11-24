@@ -1,20 +1,15 @@
 {
   "schemaVersion": 1,
-  "importedAt": "2026-11-18T19:48:08+08:00",
+  "importedAt": "2026-11-24T12:00:00+08:00",
   "source": {
-    "supplier": "WeJoy",
-    "supplierNameStatus": "from_filename",
-    "fileName": "WeJoy报价单 副本-geeknexus.xlsx",
-    "sha256": "3bd43c84e610dd2d47a56c07841480bccf6137e21706c36ffc0baf4db89d2691",
+    "supplier": "多供应商报价快照",
+    "fileName": "multiple-supplier-snapshot",
+    "sheet": "多工作表",
     "quoteUpdatedAt": null,
-    "sheet": "模型报价",
     "pricePurpose": "source_quote",
+    "supplierNameStatus": "from_user_context",
     "notes": [
-      "供应商名称来自文件名，尚未独立核验。",
-      "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
-      "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
-      "仅导入模型报价主表，不将对外售价当作供应商来价。",
-      "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      "每条记录保留各自 Excel 文件、工作表与导入时间。"
     ]
   },
   "records": [
@@ -68,7 +63,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r006",
@@ -118,7 +124,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r009",
@@ -168,7 +185,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r012",
@@ -218,7 +246,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r015",
@@ -270,7 +309,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r018",
@@ -320,7 +370,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r021",
@@ -370,7 +431,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r027",
@@ -414,7 +486,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r029",
@@ -458,7 +541,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r031",
@@ -502,7 +596,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r033",
@@ -546,7 +651,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r035",
@@ -592,7 +708,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r037",
@@ -636,7 +763,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r039",
@@ -680,7 +818,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r041",
@@ -724,7 +873,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r043",
@@ -768,7 +928,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r045",
@@ -812,7 +983,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r047",
@@ -850,7 +1032,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r048",
@@ -888,7 +1081,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r049",
@@ -926,7 +1130,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r051",
@@ -964,7 +1179,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r052",
@@ -1002,7 +1228,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r053",
@@ -1033,7 +1270,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r054",
@@ -1064,7 +1312,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r055",
@@ -1095,7 +1354,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r056",
@@ -1126,7 +1396,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r060",
@@ -1164,7 +1445,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r061",
@@ -1202,7 +1494,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r062",
@@ -1256,7 +1559,18 @@
           }
         }
       ],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r063",
@@ -1294,7 +1608,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r064",
@@ -1332,7 +1657,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r065",
@@ -1370,7 +1706,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r066",
@@ -1408,7 +1755,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r067",
@@ -1448,7 +1806,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r068",
@@ -1488,7 +1857,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r069",
@@ -1528,7 +1908,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r070",
@@ -1568,7 +1959,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r071",
@@ -1608,7 +2010,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r072",
@@ -1648,7 +2061,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r073",
@@ -1686,7 +2110,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r074",
@@ -1726,7 +2161,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r075",
@@ -1766,7 +2212,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r076",
@@ -1820,7 +2277,18 @@
           }
         }
       ],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r077",
@@ -1858,7 +2326,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r078",
@@ -1896,7 +2375,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r079",
@@ -1934,7 +2424,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r080",
@@ -1972,7 +2473,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r081",
@@ -2010,7 +2522,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r082",
@@ -2048,7 +2571,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r083",
@@ -2086,7 +2620,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r084",
@@ -2124,7 +2669,18 @@
       },
       "issues": [],
       "issueDetails": [],
-      "cacheStatus": "provided"
+      "cacheStatus": "provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r086",
@@ -2159,7 +2715,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r087",
@@ -2194,7 +2761,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r088",
@@ -2229,7 +2807,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r089",
@@ -2264,7 +2853,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r090",
@@ -2299,7 +2899,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r091",
@@ -2334,7 +2945,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r092",
@@ -2369,7 +2991,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r093",
@@ -2404,7 +3037,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r094",
@@ -2438,7 +3082,18 @@
       ],
       "issueDetails": [],
       "approximateOutput": 0.55,
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r095",
@@ -2472,7 +3127,18 @@
       ],
       "issueDetails": [],
       "approximateOutput": 0.9,
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r096",
@@ -2505,7 +3171,18 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
     },
     {
       "id": "wejoy-models-r097",
@@ -2538,7 +3215,1679 @@
         "视频报价的计费单位未单独注明，待确认后再与其他报价比较。"
       ],
       "issueDetails": [],
-      "cacheStatus": "not_provided"
+      "cacheStatus": "not_provided",
+      "sourceFileName": "WeJoy报价单 副本-geeknexus.xlsx",
+      "sourceSheet": "模型报价",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自文件名，尚未独立核验。",
+        "导入时间不是供应商报价更新时间；原表未提供明确报价更新时间。",
+        "单价为原表数值，折扣单独保存；折后展示属于按该折扣计算的参考价。",
+        "仅导入模型报价主表，不将对外售价当作供应商来价。",
+        "AWS、官方、官Key号池均为原表来源描述，不代表本系统认证。"
+      ]
+    },
+    {
+      "id": "wangsu-r002-tier1",
+      "model": "openai · 文本",
+      "family": "openai",
+      "category": "text",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 2,
+      "sourceRange": "A2:C2",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r002-tier2",
+      "model": "openai · 文本",
+      "family": "openai",
+      "category": "text",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "2000-10000usd",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.85,
+      "sourceRow": 2,
+      "sourceRange": "A2:C2",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r002-tier3",
+      "model": "openai · 文本",
+      "family": "openai",
+      "category": "text",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8,
+      "sourceRow": 2,
+      "sourceRange": "A2:C2",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r003-tier1",
+      "model": "openai · 图像",
+      "family": "openai",
+      "category": "image",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 3,
+      "sourceRange": "A3:C3",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r003-tier2",
+      "model": "openai · 图像",
+      "family": "openai",
+      "category": "image",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "2000-10000usd",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.85,
+      "sourceRow": 3,
+      "sourceRange": "A3:C3",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r003-tier3",
+      "model": "openai · 图像",
+      "family": "openai",
+      "category": "image",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8,
+      "sourceRow": 3,
+      "sourceRange": "A3:C3",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000-10000usd，8.5折（不含税），10000以上，8折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r004-tier1",
+      "model": "openai · 音频",
+      "family": "openai",
+      "category": "other",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd及以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.95,
+      "sourceRow": 4,
+      "sourceRange": "A4:C4",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd及以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r004-tier2",
+      "model": "openai · 音频",
+      "family": "openai",
+      "category": "other",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 4,
+      "sourceRange": "A4:C4",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd及以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r005-tier1",
+      "model": "openai · 视频",
+      "family": "openai",
+      "category": "video",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd及以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.95,
+      "sourceRow": 5,
+      "sourceRange": "A5:C5",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd及以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r005-tier2",
+      "model": "openai · 视频",
+      "family": "openai",
+      "category": "video",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 5,
+      "sourceRange": "A5:C5",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd及以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r006-tier1",
+      "model": "openai · 向量生成",
+      "family": "openai",
+      "category": "other",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.95,
+      "sourceRow": 6,
+      "sourceRange": "A6:C6",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r006-tier2",
+      "model": "openai · 向量生成",
+      "family": "openai",
+      "category": "other",
+      "upstream": "openai",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "openai",
+      "condition": "10000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 6,
+      "sourceRange": "A6:C6",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：10000usd以下，9.5折（不含税），10000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r007-tier1",
+      "model": "Google/gemini · 文本",
+      "family": "Google/gemini",
+      "category": "text",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 7,
+      "sourceRange": "A7:C7",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r007-tier2",
+      "model": "Google/gemini · 文本",
+      "family": "Google/gemini",
+      "category": "text",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000-10000usd",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8800000000000001,
+      "sourceRow": 7,
+      "sourceRange": "A7:C7",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r007-tier3",
+      "model": "Google/gemini · 文本",
+      "family": "Google/gemini",
+      "category": "text",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "10000以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8300000000000001,
+      "sourceRow": 7,
+      "sourceRange": "A7:C7",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r008-tier1",
+      "model": "Google/gemini · 图像",
+      "family": "Google/gemini",
+      "category": "image",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 8,
+      "sourceRange": "A8:C8",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r008-tier2",
+      "model": "Google/gemini · 图像",
+      "family": "Google/gemini",
+      "category": "image",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000-10000usd",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8800000000000001,
+      "sourceRow": 8,
+      "sourceRange": "A8:C8",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r008-tier3",
+      "model": "Google/gemini · 图像",
+      "family": "Google/gemini",
+      "category": "image",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "10000以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8300000000000001,
+      "sourceRow": 8,
+      "sourceRange": "A8:C8",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.3折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r009-tier1",
+      "model": "Google/gemini · 视频",
+      "family": "Google/gemini",
+      "category": "video",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 9,
+      "sourceRange": "A9:C9",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r009-tier2",
+      "model": "Google/gemini · 视频",
+      "family": "Google/gemini",
+      "category": "video",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "2000-10000usd",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.8800000000000001,
+      "sourceRow": 9,
+      "sourceRange": "A9:C9",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r009-tier3",
+      "model": "Google/gemini · 视频",
+      "family": "Google/gemini",
+      "category": "video",
+      "upstream": "Google/gemini",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Google/gemini",
+      "condition": "10000以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.85,
+      "sourceRow": 9,
+      "sourceRange": "A9:C9",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税）；2000-10000usd，8.8折（不含税）；10000以上，8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r010-tier1",
+      "model": "Anthropic/claude · 文本",
+      "family": "Anthropic/claude",
+      "category": "text",
+      "upstream": "Anthropic/claude",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Anthropic/claude",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.95,
+      "sourceRow": 10,
+      "sourceRange": "A10:C10",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9.5折（不含税）；2000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r010-tier2",
+      "model": "Anthropic/claude · 文本",
+      "family": "Anthropic/claude",
+      "category": "text",
+      "upstream": "Anthropic/claude",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Anthropic/claude",
+      "condition": "2000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 10,
+      "sourceRange": "A10:C10",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9.5折（不含税）；2000usd以上，9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r011-tier1",
+      "model": "xAI/grok · 文本",
+      "family": "xAI/grok",
+      "category": "text",
+      "upstream": "xAI/grok",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "xAI/grok",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 11,
+      "sourceRange": "A11:C11",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000usd以上：8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r011-tier2",
+      "model": "xAI/grok · 文本",
+      "family": "xAI/grok",
+      "category": "text",
+      "upstream": "xAI/grok",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "xAI/grok",
+      "condition": "2000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.85,
+      "sourceRow": 11,
+      "sourceRange": "A11:C11",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000usd以上：8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r012-tier1",
+      "model": "Stability AI · 图像",
+      "family": "Stability AI",
+      "category": "image",
+      "upstream": "Stability AI",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Stability AI",
+      "condition": "2000usd以下",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 12,
+      "sourceRange": "A12:C12",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000usd以上：8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r012-tier2",
+      "model": "Stability AI · 图像",
+      "family": "Stability AI",
+      "category": "image",
+      "upstream": "Stability AI",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Stability AI",
+      "condition": "2000usd以上",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.85,
+      "sourceRow": 12,
+      "sourceRange": "A12:C12",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：2000usd以下，9折（不含税），2000usd以上：8.5折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "wangsu-r013-tier1",
+      "model": "Black Forest Labs · 图像",
+      "family": "Black Forest Labs",
+      "category": "image",
+      "upstream": "Black Forest Labs",
+      "accessType": "边缘AI网关-海外",
+      "sourceLabel": "Black Forest Labs",
+      "condition": "未注明消费档位",
+      "currency": "USD",
+      "unit": "monthly_spend_tier",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.9,
+      "sourceRow": 13,
+      "sourceRange": "A13:C13",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "原文：9折（不含税）",
+        "来源未提供模型单价；本条仅供查询折扣档位。"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "网宿边缘AI",
+      "sourceFileName": "网宿边缘AI报价模板.xlsx",
+      "sourceSheet": "边缘AI网关-海外",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件仅标明“边缘AI网关-海外”。",
+        "此表只提供按月消费档位的折扣，未提供模型级输入、输出或缓存单价。",
+        "折扣均标注为不含税；不能据此反推结算单价。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r002",
+      "model": "Claude-AWS Bedrock",
+      "family": "Anthropic",
+      "category": "text",
+      "upstream": "Anthropic",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "Anthropic",
+      "condition": "海外 · 未税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.6,
+      "sourceRow": 2,
+      "sourceRange": "A2:F2",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "即：正常使用的claude（aws版）"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r003",
+      "model": "Claude max 零注入",
+      "family": "Anthropic",
+      "category": "text",
+      "upstream": "Anthropic",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "Anthropic",
+      "condition": "海外 · 未税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.25,
+      "sourceRow": 3,
+      "sourceRange": "A3:F3",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "即：ccmax"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r004",
+      "model": "OpenAI 官 key",
+      "family": "OpenAI",
+      "category": "text",
+      "upstream": "OpenAI",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "OpenAI",
+      "condition": "海外 · 未税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.55,
+      "sourceRow": 4,
+      "sourceRange": "A4:F4",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r005",
+      "model": "gpt-高速",
+      "family": "OpenAI",
+      "category": "text",
+      "upstream": "OpenAI",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "OpenAI",
+      "condition": "海外 · 未税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.15,
+      "sourceRow": 5,
+      "sourceRange": "A5:F5",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r006",
+      "model": "—",
+      "family": "Gemini",
+      "category": "text",
+      "upstream": "Gemini",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "Gemini",
+      "condition": "海外 · 未税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": null,
+      "sourceRow": 6,
+      "sourceRange": "A6:F6",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "paused",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "暂停：大厂蒸馏价格过高，资源不足"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。",
+        "原表标注暂停，未提供可用折扣。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r007",
+      "model": "kimi-k3",
+      "family": "Kimi",
+      "category": "text",
+      "upstream": "Kimi",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "Kimi",
+      "condition": "国内 · 含税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.51,
+      "sourceRow": 7,
+      "sourceRange": "A7:F7",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r008",
+      "model": "kimi-k3.1",
+      "family": "Kimi",
+      "category": "text",
+      "upstream": "Kimi",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "Kimi",
+      "condition": "国内 · 含税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.57,
+      "sourceRow": 8,
+      "sourceRange": "A8:F8",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r009",
+      "model": "deepseek-v4.1-flash-1017",
+      "family": "DeepSeek",
+      "category": "text",
+      "upstream": "DeepSeek",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "DeepSeek",
+      "condition": "国内 · 含税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.4,
+      "sourceRow": 9,
+      "sourceRange": "A9:F9",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r010",
+      "model": "glm5.3",
+      "family": "GLM",
+      "category": "text",
+      "upstream": "GLM",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "GLM",
+      "condition": "国内 · 含税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.45,
+      "sourceRow": 10,
+      "sourceRange": "A10:F10",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
+    },
+    {
+      "id": "jieyun-token-r011",
+      "model": "seedance 官 key",
+      "family": "BytePlus",
+      "category": "video",
+      "upstream": "BytePlus",
+      "accessType": "中转站（原表说明）",
+      "sourceLabel": "BytePlus",
+      "condition": "国内 · 含税",
+      "currency": "未注明",
+      "unit": "discount_only",
+      "input": null,
+      "output": null,
+      "cache": [],
+      "discount": 0.76,
+      "sourceRow": 11,
+      "sourceRange": "A11:F11",
+      "quoteUpdatedAt": null,
+      "pricePurpose": "discount_only",
+      "priceStatus": "source_unverified",
+      "cacheStatus": "not_provided",
+      "notes": [
+        "即：seedance2.0/2.5 字节满血版（也叫官方版）"
+      ],
+      "rawPrices": {
+        "input": null,
+        "output": null
+      },
+      "issues": [
+        "原表未提供输入、输出、缓存基础单价，不能计算折后单价。"
+      ],
+      "issueDetails": [],
+      "supplier": "界云",
+      "sourceFileName": "界云Token与金融智能体业务报价表【对外版】-261123 - sh.xlsx",
+      "sourceSheet": "Token业务",
+      "sourceImportedAt": "2026-11-24T12:00:00+08:00",
+      "sourceQuoteUpdatedAt": null,
+      "sourceNotes": [
+        "供应商名称来自用户提供的上下文；文件名未单独标明供应商主体。",
+        "仅导入 Token业务 工作表；金融智能体与金融数据为不同业务计价，不混入 Token 模型报价。",
+        "此表只提供对外折扣，未提供输入、输出或缓存基础单价。",
+        "原表说明海外未税、国内含税，不能直接比较；交付模式为中转站，官 key 需一事一议。"
+      ]
     }
   ]
 }

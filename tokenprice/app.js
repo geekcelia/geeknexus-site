@@ -5,7 +5,7 @@
   const MAX_RECORDS = 1000;
   const DATA_KEY = 'geeknexus-tokenprice-data-v1';
   const FAVORITES_KEY = 'geeknexus-tokenprice-favorites-v1';
-  const CATEGORIES = new Set(['text', 'image', 'video']);
+  const CATEGORIES = new Set(['text', 'image', 'video', 'other']);
   const $ = (id) => document.getElementById(id);
   const state = {
     data: null, bundled: null, filtered: [], family: 'all', category: 'all',
@@ -128,7 +128,7 @@
       if (ids.has(identity)) throw new Error(`同一供应商的报价 ID 重复：${originalId}`);
       ids.add(identity);
       const id = availableId(supplier, originalId, uniqueIds);
-      if (!CATEGORIES.has(row.category)) throw new Error(`${prefix} category 必须是 text、image 或 video。`);
+      if (!CATEGORIES.has(row.category)) throw new Error(`${prefix} category 必须是 text、image、video 或 other。`);
       const discount = priceValue(row.discount, `${prefix}折扣`);
       if (discount !== null && discount > 1) throw new Error(`${prefix}折扣需在 0–1 之间，例如 0.8 表示八折。`);
       if (!Array.isArray(row.cache) || row.cache.length > 20) throw new Error(`${prefix} cache 需要数组，最多 20 项。`);
@@ -381,8 +381,9 @@
   function priceCell(value, row, extraClass, approximate = false) {
     const td = element('td', `price-cell ${extraClass || ''}`.trim());
     const amount = displayedPrice(value, row);
-    td.append(element('span', amount === null ? 'price-missing' : 'price-value price', amount === null ? '—' : `${approximate ? '约 ' : ''}${numberText(amount)}`));
-    td.append(element('span', 'price-unit', `${row.currency} / ${unitText(row)}`));
+    const discountOnly = row.pricePurpose === 'discount_only' && amount === null;
+    td.append(element('span', amount === null ? 'price-missing' : 'price-value price', discountOnly ? '仅折扣' : amount === null ? '—' : `${approximate ? '约 ' : ''}${numberText(amount)}`));
+    td.append(element('span', 'price-unit', discountOnly ? '未提供基础单价' : `${row.currency} / ${unitText(row)}`));
     if (value !== null && mode() === 'final' && row.discount === null) td.append(element('span', 'cell-note cell-sub', '折扣未提供，显示原价'));
     return td;
   }
@@ -562,7 +563,7 @@
     heading.id = 'detailTitle';
     fragment.append(heading, element('p', 'detail-subtitle cell-sub', `${row.supplier} · ${row.family}`));
     const fields = element('dl', 'detail-grid');
-    const labels = { text: '文本模型', image: '图像模型', video: '视频模型' };
+    const labels = { text: '文本模型', image: '图像模型', video: '视频模型', other: '其他能力' };
     [
       ['类别', labels[row.category]], ['上游平台', row.upstream || '未提供'],
       ['接入方式', row.accessType || '未提供'], ['供应商原始标签', row.sourceLabel || '未提供'],
@@ -587,7 +588,9 @@
       body.append(tr);
     });
     table.append(head, body);
-    fragment.append(table, element('p', 'detail-disclaimer detail-note', '试算 = 表内单价 × 表内折扣。折扣是否适用于每个计费项、真实结算口径和渠道性质仍需向供应商确认。所有价格沿用上述来源单位。'));
+    fragment.append(table, element('p', 'detail-disclaimer detail-note', row.pricePurpose === 'discount_only'
+      ? '此来源仅提供折扣或阶梯折扣，未提供输入、输出与缓存的基础单价，因此页面不会制造折后单价。'
+      : '试算 = 表内单价 × 表内折扣。折扣是否适用于每个计费项、真实结算口径和渠道性质仍需向供应商确认。所有价格沿用上述来源单位。'));
     if (row.rawPrices.input !== null || row.rawPrices.output !== null || row.notes.length) {
       const notes = element('div', 'detail-note');
       if (row.rawPrices.input !== null) notes.append(element('p', '', `输入原文：${row.rawPrices.input}`));
