@@ -130,7 +130,7 @@
       const id = availableId(supplier, originalId, uniqueIds);
       if (!CATEGORIES.has(row.category)) throw new Error(`${prefix} category 必须是 text、image、video 或 other。`);
       const discount = priceValue(row.discount, `${prefix}折扣`);
-      if (discount !== null && discount > 1) throw new Error(`${prefix}折扣需在 0–1 之间，例如 0.8 表示八折。`);
+      if (discount !== null && discount > 10) throw new Error(`${prefix}价格系数超过允许范围。`);
       if (!Array.isArray(row.cache) || row.cache.length > 20) throw new Error(`${prefix} cache 需要数组，最多 20 项。`);
       if (!Array.isArray(row.issues) || row.issues.length > 20) throw new Error(`${prefix} issues 需要数组，最多 20 项。`);
       if (row.rawPrices !== undefined && (!row.rawPrices || typeof row.rawPrices !== 'object' || Array.isArray(row.rawPrices))) throw new Error(`${prefix} rawPrices 必须是对象。`);
@@ -305,6 +305,7 @@
   }
 
   function discountText(value) {
+    if (value > 1) return `${numberText(value * 100)}%（加价）`;
     if (value === null) return '未提供';
     if (value === 1) return '原价';
     return `${new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2 }).format(value * 10)} 折`;
